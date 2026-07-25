@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tech id="tech.navigation" name="Navigation" zh="导航">
   <mech id="tech.navigation.maknet-compass" name="Maknet Compass Navigation"
-        zh="玼罗盘导航" since="885BK">
+        zh="玼罗盘导航" since="1175BK">
   </mech>
 
   <mech id="tech.navigation.natural-sihr.elvish" name="Elvish Natural Sihr Navigation"
@@ -13,6 +13,6 @@
   </mech>
 
   <mech id="tech.navigation.gyro-inertial" name="Gyro-Inertial Navigation"
-        zh="陀螺仪惯性导航" since="~1000BK">
+        zh="陀螺仪惯性导航" since="~1200BK">
   </mech>
 </tech>

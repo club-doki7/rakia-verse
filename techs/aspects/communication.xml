@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tech id="tech.communication" name="Communication" zh="通讯">
-  <mech id="tech.communication.maknet-rod" zh="玼柱通讯" since="882BK">
+  <mech id="tech.communication.maknet-rod" zh="玼柱通讯" since="1173BK">
     在玼罗盘发明后不久、两大玼柱设立之前，发明玼罗盘的科学家莱拉·宾特·哈立德 (Lyra bint Khalid)
     意识到，既然玼罗盘上的玼针可以与玼柱共鸣，那么也许玼柱与玼柱之间也能产生共鸣。
     这一现象最初被用于玼柱之间的相互校准，后来也进而被扩展到设立有玼柱的城邦之间的通讯。

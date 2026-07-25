@@ -12,9 +12,15 @@
     <map id="map.borders-2x" type="borders" href="map-borders-2x.png" />
   </group>
 
-  <group id="maps.indexed" width="379" height="347" grid="90km">
-    <!-- blank map, can be used as template to create other maps -->
-    <map id="map.blank" type="indexed" href="blank.json" />
+  <group id="maps.indexed" width="379" height="347" origin="top,left" grid="90km">
+    <!-- blank land map, can be used as template to create other maps -->
+    <map id="map.land" type="indexed" href="land.json">
+      <city u="87" v="138" id="city.wusulun" name="Wusulun" zh="乌苏隆" />
+      <city u="69" v="138" id="city.nabiyyun" name="Nabiyyun" zh="纳比雍" />
+      <city u="56" v="129" id="city.solmun" name="Solmun" zh="索尔穆恩" />
+      <city u="111" v="56" id="city.dwarlven" name="Dwarlven Gate" zh="矮人之门" />
+      <city u="105" v="92" id="city.milgah" name="Milgah" zh="米尔盖" />
+    </map>
 
     <!-- placeholder map for illustrating how the map editor system works -->
     <map id="map.pride" type="indexed" href="pride.json" />

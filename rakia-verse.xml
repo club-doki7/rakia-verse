@@ -143,8 +143,8 @@
     <xi:include href="history/timeline.xml" comment="时间线" />
 
     <events>
-      <xi:include href="history/event_bk1293_creation.xml" comment="造人" />
-      <xi:include href="history/event_bk938_hijrah.xml" comment="迁徙" />
+      <xi:include href="history/event_bk1692_creation.xml" comment="造人" />
+      <xi:include href="history/event_bk1238_hijrah.xml" comment="迁徙" />
       <xi:include href="history/event_kc0325_catastrophe.xml" comment="索尔穆恩之殇" />
     </events>
 
