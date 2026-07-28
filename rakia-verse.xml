@@ -157,9 +157,11 @@
     </biographies>
 
     <!-- 纪事本末体 -->
+    <!--
     <topics>
       <xi:include href="history/topic_nabiyyun_succession.xml" comment="先知之城世袭始末" />
     </topics>
+    -->
   </history>
 
   <!-- 科技：材料、物品与技术 -->

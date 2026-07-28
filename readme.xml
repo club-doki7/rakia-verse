@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<repository xmlns:xi="http://www.w3.org/2001/XInclude">
-  <metadata>
-    <author><a href="mailto:chuigda@doki7.club">Chuigda Whitegive</a></author>
-    <author><a href="mailto:alex@ckx-ily.cn">Cousin Ze</a></author>
+<repository xml:lang="zh_CN" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <author><a href="mailto:chuigda@doki7.club">Chuigda Whitegive</a></author>
+  <author><a href="mailto:alex@ckx-ily.cn">Cousin Ze</a></author>
 
-    <co-author contrib="地图绘制">
-      <a href="https://huajia.163.com/main/profile/5rloJx4E">孤桥寂雪</a>
-    </co-author>
+  <co-author contrib="地图绘制">
+    <a href="https://huajia.163.com/main/profile/5rloJx4E">孤桥寂雪</a>
+  </co-author>
 
-    <co-author>Anthropic Claude</co-author>
-    <co-author>OpenAI ChatGPT</co-author>
-    <co-author>DeepSeek</co-author>
+  <co-author>Anthropic Claude</co-author>
+  <co-author>OpenAI ChatGPT</co-author>
+  <co-author>DeepSeek</co-author>
 
-    <edition>pre-alpha</edition>
-    <language id="zh_CN">简体中文</language>
+  <edition>pre-alpha</edition>
 
-    <content-advisory>
-      仓库内容包含对以下主题的虚构描写或讨论：
-      战争与大规模伤亡、宗教迫害与强制改宗、奴隶制、酷刑、饥荒、食人、
-      暗示性的性暴力、尸体操纵、身体恐怖、精神退化以及生育控制。
-      这些描写仅为虚构叙事之需要，不代表作者对相关行为的认可、美化或鼓励。
+  <content-advisory>
+    仓库内容包含对以下主题的虚构描写或讨论：
+    战争与大规模伤亡、宗教迫害与强制改宗、奴隶制、酷刑、饥荒、食人、
+    暗示性的性暴力、尸体操纵、身体恐怖、精神退化以及生育控制。
+    这些描写仅为虚构叙事之需要，不代表作者对相关行为的认可、美化或鼓励。
 
-      抵制扭曲世设，拒绝搬运洗稿。注意自我保护，谨防受骗上当。
-      适度创作益脑，沉溺幻想伤身。合理安排时间，享受健康生活。
-    </content-advisory>
-
-    <license pattern="*.xml,*.png,*.svg" href="LICENSE">CC-BY-NC-SA-4.0</license>
-    <license pattern="*.py,*.json" href="docs/LICENSE-BSD3">BSD-3-Clause</license>
-    <license pattern="*" fallback="fallback">All rights reserved</license>
-    <code-of-conduct href="docs/CODE_OF_CONDUCT" />
-  </metadata>
+    抵制扭曲世设，拒绝搬运洗稿。注意自我保护，谨防受骗上当。
+    适度创作益脑，沉溺幻想伤身。合理安排时间，享受健康生活。
+  </content-advisory>
 
   <doc>
     穹苍宇宙（Rakia Verse）是一个世界构建项目，设定在一个平坦、有限的世界之上，
@@ -50,7 +42,10 @@
 
   <acknowledgements>
     特别感谢《韦诺之战》的创作者，为兽人、地精、石裔、食人魔和活尸提供灵感。
-
-    特别感谢 OpenAI ChatGPT 对精灵、兽人、半兽人和矮人设定的改进意见。
   </acknowledgements>
+
+  <license pattern="*.xml,*.png,*.svg" href="LICENSE">CC-BY-NC-SA-4.0</license>
+  <license pattern="*.py,*.json" href="docs/LICENSE-BSD3">BSD-3-Clause</license>
+  <license pattern="*" fallback="fallback">All rights reserved</license>
+  <code-of-conduct href="docs/CODE_OF_CONDUCT" />
 </repository>

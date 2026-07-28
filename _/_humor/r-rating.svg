@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 470" width="620" height="470">
+  <defs>
+    <style>
+      .bg { fill: #14141f; }
+      .card { fill: #ffffff; }
+      .stamp-bg { fill: #c1121f; }
+      .stamp-text { font-family: Arial Black, Arial, sans-serif; font-size: 60px; font-weight: 900; fill: #ffffff; }
+      .stamp-label { font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; fill: #ffffff; }
+      .title { font-family: Arial Black, Arial, sans-serif; font-size: 22px; font-weight: 900; fill: #14141f; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 11px; fill: #555555; }
+      .h { font-family: Arial Black, Arial, sans-serif; font-size: 11px; fill: #14141f; }
+      .axis { font-family: Arial, sans-serif; font-size: 10px; fill: #333333; }
+      .note { font-family: Arial, sans-serif; font-size: 9px; fill: #666666; }
+      .foot { font-family: Arial, sans-serif; font-size: 8.5px; fill: #888888; font-style: italic; }
+      .rej { font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; fill: #2a9d8f; }
+    </style>
+  </defs>
+
+  <rect width="620" height="470" class="bg"/>
+  <rect x="20" y="18" width="580" height="434" rx="12" class="card"/>
+
+  <!-- Rating stamp -->
+  <rect x="40" y="38" width="128" height="132" rx="8" class="stamp-bg"/>
+  <text x="104" y="66" text-anchor="middle" class="stamp-label">RATED</text>
+  <text x="104" y="128" text-anchor="middle" class="stamp-text">R15</text>
+  <rect x="50" y="144" width="108" height="15" rx="3" fill="#000000"/>
+  <text x="104" y="155" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#ffffff">15歳未満鑑賞不可</text>
+
+  <!-- Header -->
+  <text x="186" y="60" class="title">RAKIA VERSE</text>
+  <text x="186" y="79" class="subtitle">穹苍宇宙 — Worldbuilding Project (pre-alpha)</text>
+  <text x="186" y="96" class="subtitle">判定对象：正典内容（rakia-verse.xml 经 XInclude 引用者）</text>
+  <text x="186" y="113" class="subtitle">非正典目录（_draft / _humor）另行判定为 R18</text>
+
+  <!-- Why not higher -->
+  <rect x="186" y="126" width="394" height="44" rx="6" fill="#e9f7f5"/>
+  <text x="196" y="144" class="rej">✗ R18G 不适用：全库无感官化血腥描写</text>
+  <text x="196" y="158" class="note">死亡与解剖均以百科/病历式干笔叙述，无痛感、无飞溅、无尸体特写。</text>
+
+  <!-- Axis breakdown -->
+  <line x1="40" y1="188" x2="580" y2="188" stroke="#dddddd"/>
+  <text x="40" y="206" class="h">分项判定（依实际笔法，非依主题清单）</text>
+
+  <text x="40" y="228" class="axis">暴力・大规模伤亡</text>
+  <rect x="176" y="219" width="46" height="12" rx="2" fill="#c1121f"/>
+  <text x="199" y="228" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">R15</text>
+  <text x="234" y="228" class="note">索尔穆恩之殇 40 万人瞬时消失、"没有留下任何残骸"——零残骸即零血腥。</text>
+
+  <text x="40" y="250" class="axis">身体恐怖・尸体操纵</text>
+  <rect x="176" y="241" width="46" height="12" rx="2" fill="#c1121f"/>
+  <text x="199" y="250" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">R15</text>
+  <text x="234" y="250" class="note">食尸鬼的心肺复苏、湿罗音、爪化改造，写法接近生理学教材。</text>
+
+  <text x="40" y="272" class="axis">食人</text>
+  <rect x="176" y="263" width="46" height="12" rx="2" fill="#e85d04"/>
+  <text x="199" y="272" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">R12</text>
+  <text x="234" y="272" class="note">食人魔"偏爱半精灵的肉味"属食性说明，无进食场景。</text>
+
+  <text x="40" y="294" class="axis">性暴力（暗示）</text>
+  <rect x="176" y="285" width="46" height="12" rx="2" fill="#c1121f"/>
+  <text x="199" y="294" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">R15</text>
+  <text x="234" y="294" class="note">仅"第一代半兽人诞生于兽人的暴行之中"一句转述，无过程描写。</text>
+
+  <text x="40" y="316" class="axis">性描写</text>
+  <rect x="176" y="307" width="46" height="12" rx="2" fill="#2a9d8f"/>
+  <text x="199" y="316" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">全年龄</text>
+  <text x="234" y="316" class="note">正典中"交配/生育率/妊娠期"均为繁殖生物学术语。</text>
+
+  <text x="40" y="338" class="axis">歧视・奴隶制</text>
+  <rect x="176" y="329" width="46" height="12" rx="2" fill="#e85d04"/>
+  <text x="199" y="338" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">R12</text>
+  <text x="234" y="338" class="note">以社会史视角陈述，叙事立场不予美化。</text>
+
+  <text x="40" y="360" class="axis">思想冲击（神学）</text>
+  <rect x="176" y="351" width="46" height="12" rx="2" fill="#6a0572"/>
+  <text x="199" y="360" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">R15</text>
+  <text x="234" y="360" class="note">真实教史映射（宗教迫害、强制改宗）＋偶因论对因果律的取消。</text>
+
+  <!-- Non-canon -->
+  <line x1="40" y1="378" x2="580" y2="378" stroke="#dddddd"/>
+  <text x="40" y="396" class="h">非正典附注 — _/_humor/ 单独计为 R18</text>
+  <text x="40" y="412" class="note">freud.xml：性欲一元论、阳具象征、弑父淫母之结——学术戏仿的露骨用词，非情色描写。</text>
+  <text x="40" y="426" class="note">该目录经 underlined.xml 声明为非正典，不计入正典分级。</text>
+
+  <line x1="40" y1="434" x2="580" y2="434" stroke="#dddddd"/>
+  <text x="40" y="446" class="foot">本分级为戏仿创作，无任何官方效力。抵制扭曲世设，拒绝搬运洗稿。合理安排时间，享受健康生活。</text>
+</svg>
