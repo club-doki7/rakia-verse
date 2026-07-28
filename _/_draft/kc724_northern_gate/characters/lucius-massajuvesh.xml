@@ -83,7 +83,7 @@
       书页边缘有他自己的批注，字迹工整，内容多为"此处语义存疑，待查"。
     </item>
 
-    <item type="accessory/religious" name="念珠" material="olive-wood">
+    <item type="misc" name="念珠" material="olive-wood">
       三十三颗橄榄木珠串成的祈祷念珠，教权派教士的标配。
       用于记数赞念和冥想祈祷。珠子被指尖磨得发亮，说明确实在用——
       至少在"虔诚"这件事上，鲁基乌斯不完全是在演。
@@ -96,7 +96,7 @@
       至于为什么"别人"送的总是恰好合身且品味上佳，他选择不回答这个问题。
     </item>
 
-    <item type="container" name="旅行包袱" material="oiled-canvas+leather">
+    <item type="misc" name="旅行包袱" material="oiled-canvas+leather">
       一只做工考究的油布挎包，内里分了好几个隔层。
       装着换洗衣物、洗漱用具、一小瓶橄榄油（据说是涂圣油用的，但更常被用来护理头发）、
       以及数量可疑的零食干果。

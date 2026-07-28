@@ -14,7 +14,7 @@
 
   <group id="maps.indexed" width="379" height="347" origin="top,left" grid="90km">
     <!-- blank land map, can be used as template to create other maps -->
-    <map id="map.land" type="indexed" href="land.json">
+    <map id="map.land" type="indexed,hexgrid" href="land.json">
       <city u="87" v="138" id="city.wusulun" name="Wusulun" zh="乌苏隆" />
       <city u="69" v="138" id="city.nabiyyun" name="Nabiyyun" zh="纳比雍" />
       <city u="56" v="129" id="city.solmun" name="Solmun" zh="索尔穆恩" />
@@ -23,6 +23,6 @@
     </map>
 
     <!-- placeholder map for illustrating how the map editor system works -->
-    <map id="map.pride" type="indexed" href="pride.json" />
+    <map id="map.pride" type="indexed,hexgrid" href="pride.json" />
   </group>
 </maps>

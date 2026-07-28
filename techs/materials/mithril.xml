@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<material id="material.mithril" name="Mithril" zh="秘银">
+<material id="material.mithril" name="Mithril" zh="秘银" since="~2000BK">
   <summary>
     秘银是一种极稀有的金属，具有极高的强度和韧性，同时重量极轻，
     且能与魔术材料相互嵌合，经不同加工方式而具有顺魔力或拒魔力，

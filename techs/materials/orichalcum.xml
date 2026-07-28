@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<material id="material.orichalcum" name="Orichalcum" zh="精金">
+<material id="material.orichalcum" name="Orichalcum" zh="精金" since="725BK">
   <summary>
     精金是一种极坚硬的稀有金属，刚性极强，硬度与金刚石并列，
     密度较高而手感沉实，对魔力呈中性态度，既不导魔亦不拒魔。

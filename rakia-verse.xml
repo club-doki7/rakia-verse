@@ -140,18 +140,26 @@
 
   <!-- 历史 -->
   <history>
+    <!-- 编年体 -->
     <xi:include href="history/timeline.xml" comment="时间线" />
 
     <events>
       <xi:include href="history/event_bk1692_creation.xml" comment="造人" />
       <xi:include href="history/event_bk1238_hijrah.xml" comment="迁徙" />
+      <xi:include href="history/event_bk642_battle_of_ashfang_peak.xml" comment="灰牙峰之战" />
       <xi:include href="history/event_kc0325_catastrophe.xml" comment="索尔穆恩之殇" />
     </events>
 
+    <!-- 纪传体 / 拉丁名人传等 -->
     <biographies>
       <xi:include href="history/bio_ibn_sunyavar.xml" comment="DE SHAVLIO / 善利·伊本·苏亚瓦" />
       <xi:include href="history/bio_chi_fangning.xml" comment="姬怀远世家" />
     </biographies>
+
+    <!-- 纪事本末体 -->
+    <topics>
+      <xi:include href="history/topic_nabiyyun_succession.xml" comment="先知之城世袭始末" />
+    </topics>
   </history>
 
   <!-- 科技：材料、物品与技术 -->

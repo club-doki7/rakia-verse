@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<material id="material.maknet" name="Maknet" zh="玼石">
+<material id="material.maknet" name="Maknet" zh="玼石" since="~1550BK">
   <summary>
     玼石是穹苍世界最重要的矿物之一，是天然的奥术导体，有些还是天然的奥术能量源。
     玼石被广泛应用于奥术研究、魔术物品和附魔物品，推动着文明的发展和技术的进步。

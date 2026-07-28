@@ -93,7 +93,6 @@
 
     比起奥术魔术那种需要正心组词咏唱的“工程活”，自然魔术对她来说更像是一种情绪的延伸——
     心情好的时候身边的植物会精神一点，心情差的时候猫会主动来蹭她的腿。
-    水平不算高，做不到精灵长老那种与整片森林交融的程度，但日常够用。
   </component>
 
   <component type="fight.duel">
@@ -157,7 +156,7 @@
       这件斗篷已经穿了几十年，有几处缝补过，不过精灵的纺织工艺让它依然保持着良好的防风和保暖性能。
     </item>
 
-    <item type="ring" material="silver+unidentified-blue-gem">
+    <item type="spellfocus/ring" material="silver+unidentified-blue-gem">
       阿依莎的魔术戒指，镶嵌着一颗不知名的蓝色宝石，大概率不是刚玉，且大概率不值钱。她也懒得鉴定。
 
       当时阿依莎在台上卖唱，台下有个醉醺醺的法师听得入了迷，想用魔术掀她裙子。
@@ -169,5 +168,6 @@
 
     <item type="instrument/lyre" material="poplar+silk(string)" />
     <item type="armor/leather" material="leather+cotton" />
+    <item type="helmet/leather" material="leather" />
   </inventory>
 </character>

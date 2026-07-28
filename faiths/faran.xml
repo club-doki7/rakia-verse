@@ -77,14 +77,6 @@
     <variant id="faith.faran.hierarchical" name="The Hierarchical Faran" zh="教权派">
     </variant>
 
-    <variant id="faith.faran.orthodox"
-             name="The Orthodox Hierarchical Faran" zh="正统教权派 / 正统派">
-    </variant>
-
-    <variant id="faith.faran.ahl-al-bayt"
-             name="The Ahl al-Bayt Hierarchical Faran" zh="圣裔教权派 / 圣裔派">
-    </variant>
-
     <variant id="faith.faran.shaman" name="The Shamanic Faran" zh="萨满派">
     </variant>
 
