@@ -35,6 +35,11 @@
   ]
 }
 
-#let section(id: none, meta: none, body) = [
+#let section(meta, id: none, body) = [
   #if id != none { label(id) } #body
 ]
+
+#let being = section.with("being")
+#let species = section.with("species")
+#let variant = section.with("variant")
+#let chapter = section.with("chapter")

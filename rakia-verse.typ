@@ -1,4 +1,4 @@
-#import "./src/style.typ": zh-fonts, part-page, chapter, section
+#import "src/style.typ": zh-fonts, part-page, chapter, section
 
 #[
   #set text(font: zh-fonts, lang: "zh", size: 11pt)
@@ -63,3 +63,7 @@
 
   // 感谢伊玛目艾什尔里、伊玛目巴基拉尼开源
 ]
+
+#include "src/beings.typ"
+
+#part-page("第二部分：智慧生命")
