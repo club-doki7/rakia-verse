@@ -24,8 +24,28 @@ sys.stderr.reconfigure(encoding="utf-8")
 XI_NS = "http://www.w3.org/2001/XInclude"
 XI_INCLUDE_TAG = f"{{{XI_NS}}}include"
 
+# xml 命名空间
+XML_NS = "http://www.w3.org/XML/1998/namespace"
+
 # 注册命名空间前缀，避免输出时变为 ns0、ns1 等
 ET.register_namespace("xi", XI_NS)
+ET.register_namespace("xml", XML_NS)
+
+# 命名空间 URI -> 前缀映射（用于自定义序列化）
+_NS_PREFIX_MAP = {
+    XI_NS: "xi",
+    XML_NS: "xml",
+}
+
+
+def _resolve_clark_name(name: str) -> str:
+    """将 Clark notation {uri}local 转换为 prefix:local 形式。"""
+    if name.startswith("{"):
+        uri, local = name[1:].split("}", 1)
+        prefix = _NS_PREFIX_MAP.get(uri)
+        if prefix:
+            return f"{prefix}:{local}"
+    return name
 
 
 def parse_xml(filepath: str) -> ET.ElementTree:
@@ -160,9 +180,10 @@ def _serialize_element(element: ET.Element, level: int, indent_str: str) -> list
         return lines
 
     # 构建开始标签
-    tag = element.tag
+    tag = _resolve_clark_name(element.tag)
     attrs = ""
     for key, value in element.attrib.items():
+        key = _resolve_clark_name(key)
         # 转义属性值中的特殊字符
         value = value.replace("&", "&amp;").replace("<", "&lt;").replace('"', "&quot;")
         attrs += f' {key}="{value}"'
@@ -257,27 +278,27 @@ def indent_xml(element: ET.Element, indent_str: str = "  ") -> str:
     return "\n".join(lines)
 
 
-def extract_metadata(readme_file: str) -> ET.Element | None:
+def extract_metadata(metadata_file: str) -> ET.Element | None:
     """
-    从 readme.xml 中抽取 <metadata> 元素。
+    从 metadata.xml 中抽取 <metadata> 元素。
 
     参数:
-        readme_file: readme.xml 文件路径
+        metadata_file: metadata.xml 文件路径
 
     返回:
         metadata 元素，若未找到则返回 None
     """
     try:
-        tree = parse_xml(readme_file)
+        tree = parse_xml(metadata_file)
         root = tree.getroot()
     except (ET.ParseError, FileNotFoundError) as e:
-        print(f"警告: 无法解析 readme.xml: {e}")
+        print(f"警告: 无法解析 metadata.xml: {e}")
         return None
 
-    metadata = root.find("metadata")
-    if metadata is None:
-        print("警告: readme.xml 中未找到 <metadata> 元素")
-    return metadata
+    if root.tag != "metadata":
+        print(f"警告: metadata.xml 根元素不是 <metadata>，而是 <{root.tag}>")
+        return None
+    return root
 
 
 def package(entry_file: str, output_file: str):
@@ -313,9 +334,9 @@ def package(entry_file: str, output_file: str):
     # 清理残留的 xi 命名空间引用
     clean_xi_namespace(root)
 
-    # 从 readme.xml 抽取 metadata 并注入打包产物根元素
-    readme_file = os.path.join(base_dir, "readme.xml")
-    metadata = extract_metadata(readme_file)
+    # 从 metadata.xml 抽取 metadata 并注入打包产物根元素
+    metadata_file = os.path.join(base_dir, "metadata.xml")
+    metadata = extract_metadata(metadata_file)
     if metadata is not None:
         clean_xi_namespace(metadata)
         root.insert(0, metadata)
