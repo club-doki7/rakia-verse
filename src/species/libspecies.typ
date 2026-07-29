@@ -29,3 +29,39 @@
 
   #body
 ]
+
+#let faith(body) = section("faith", none)[
+  == 信仰
+
+  #body
+]
+
+#let sihr(body) = section("sihr", none)[
+  == 魔术
+
+  #body
+]
+
+#let variants(body) = section("variants", none)[
+  == 变种
+
+  #body
+]
+
+#let variant(id, title, body) = section("variant", id)[
+  === #title
+
+  #body
+]
+
+#let communication(body) = section("communication", none)[
+  == 交流
+
+  #body
+]
+
+#let shaman(body) = section("shaman", none)[
+  == 萨满
+
+  #body
+]

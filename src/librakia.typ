@@ -43,7 +43,6 @@
 ]
 
 #let being = section.with("being")
-#let variant = section.with("variant")
 #let summary(body) = section("summary", none)[
   == 摘要
 
