@@ -3,6 +3,13 @@
 #[
   #set text(font: zh-fonts, lang: "zh", size: 11pt)
   #show heading: set align(center)
+  #show outline.entry: it => {
+    if it.element.supplement.text == "part" {
+      pad(top: 1em, text(weight: "bold", it))
+    } else {
+      pad(left: 1em, it)
+    }
+  }
   #outline(title: "目录")
   #colbreak()
 ]
