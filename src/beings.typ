@@ -1,4 +1,4 @@
-#import "style.typ": chapter, section
+#import "./style.typ": chapter, section
 
 #chapter(
   title: "强大的存在",
