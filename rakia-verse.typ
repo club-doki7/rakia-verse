@@ -64,4 +64,5 @@
 
 #include "src/species/human.typ"
 #include "src/species/elf.typ"
+#include "src/species/dwarf.typ"
 #include "src/species/cephalon.typ"
