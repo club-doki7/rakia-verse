@@ -63,3 +63,5 @@
 #part-page("第二部分：智慧生命")
 
 #include "src/species/human.typ"
+#include "src/species/elf.typ"
+#include "src/species/cephalon.typ"
