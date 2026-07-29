@@ -1,16 +1,13 @@
-#import "style.typ": chapter, being
+#import "librakia.typ": beings, being
 
-#chapter(
-  title: "强大的存在",
-  id: "beings"
-)[
-  #being(id: "being.alfara")[
+#beings("beings", "强大的存在")[
+  #being("being.alfara")[
     == 艾尔法拉 (Alfara)
 
     艾尔法拉是世界的创造者与维持者，万物的每一刻存在都依赖于祂的意志。祂“一个存在”是存在本身的源头，超越受造物所能理解的范畴。
   ]
 
-  #being(id: "being.bleezehub")[
+  #being("being.bleezehub")[
     == 俾劣徙卜 (Bleezehub)
 
     俾劣徙卜原是镇尼中最虔敬者，又因傲慢而堕落。自堕落以来，他以引诱凡人偏离正道为己任，直至末日。
@@ -20,7 +17,7 @@
     - 与追求力量的凡人缔约，赐予他们强大的能力，使其在大地上散布腐败。
   ]
 
-  #being(id: "being.ragnaak")[
+  #being("being.ragnaak")[
     == 拉格纳克 (Ragnaak)
 
     一位极为古老且强大的镇尼，自称“战争与鲜血之主”。拉格纳克既不效忠艾尔法拉，也不追随俾劣徙卜，他只崇尚纯粹的力量与战斗本身。在兽人的信仰中，拉格纳克是他们“力之信条”的体现者和庇护者，赐予勇猛的战士以超凡的力量。兽人视他为善：他奖励强者，惩罚弱者，这正是世界的法则。
@@ -28,7 +25,7 @@
     但在其他物种看来，拉格纳克催生了无尽的战争与毁灭。
   ]
 
-  #being(id: "being.al-qudama")[
+  #being("being.al-qudama")[
     == 旧日支配者 (The Old Ones)
 
     栖息于海洋深处的极古老智慧生物，没有人知道它们的确切起源。它们可能先于一切类人物种，甚至可能先于镇尼。有学者推测它们是艾尔法拉最初的造物之一，但这一说法从未得到证实，也无法得到证实。

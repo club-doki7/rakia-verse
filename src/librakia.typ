@@ -21,8 +21,8 @@
   )
 ]
 
-#let chapter(title: "", id: none, meta: none, body) = {
-  set page(paper: "a4", numbering: "1", margin: (top: 2.25cm, bottom: 2.25cm))
+#let chapter(xtag, id, title, body) = {
+  set page(paper: "a4", numbering: "1")
   set text(font: zh-fonts, lang: "zh", size: 11pt)
   show heading.where(level: 1): set align(center)
   counter(footnote).update(1)
@@ -35,11 +35,17 @@
   ]
 }
 
-#let section(meta, id: none, body) = [
+#let beings = chapter.with("beings")
+#let species = chapter.with("species")
+
+#let section(xtag, id, body) = [
   #if id != none { label(id) } #body
 ]
 
 #let being = section.with("being")
-#let species = section.with("species")
 #let variant = section.with("variant")
-#let chapter = section.with("chapter")
+#let summary(body) = section("summary", none)[
+  == 摘要
+
+  #body
+]

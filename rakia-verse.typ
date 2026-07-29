@@ -1,4 +1,4 @@
-#import "src/style.typ": zh-fonts, part-page, chapter, section
+#import "src/librakia.typ": zh-fonts, part-page, chapter, section
 
 #[
   #set text(font: zh-fonts, lang: "zh", size: 11pt)
@@ -10,16 +10,13 @@
       pad(left: 1em, it)
     }
   }
-  #outline(title: "目录")
+  #outline(title: "目录", target: heading.where(level: 1))
   #colbreak()
 ]
 
 #part-page("第一部分：基础设定")
 
-#chapter(
-  title: "简介",
-  id: "intro",
-)[
+#chapter("summary", "summary", "简介")[
   穹苍宇宙是一个天圆地方的世界，其名称来源于希伯来语 רקיע (raqia / rakia)，意为“穹苍”。居民知晓自己所处世界的形状，故以此词指代整片天空。
 
   地面理论上是一个圆形的有限无界平面，目前已探索的范围约有半径 24,350 km。地壳似乎是向下无限延伸的，目前人类的潜水深度记录为 300m，钻井深度记录为 1,854m，远未有“触底”的迹象。据传更深的地方仍有石裔居住。
@@ -37,10 +34,7 @@
   目前使用最广泛的历法系统规定每年共 360 天，分为 15 个月，每月 24 天。在此基础上，大部分历法的规则相同，区别仅在于起始年份选在哪一年。例如，最常用的王国历 (KC) 以人类联合王国（索利斯王朝）的建立为起点 (1KC)。
 ]
 
-#chapter(
-  title: "形而上学",
-  id: "meta-physics"
-)[
+#chapter("meta-physics", "meta-physics", "形而上学")[
   本质上，整个世界连同其每一刻，都是由独一而遥远的艾尔法拉创造的。
 
   世界并无自存的因果律。人们所观察到的“因果关系”，实际上是艾尔法拉以习惯的方式持续创造的结果：祂习惯性地在火之后创造燃烧，在落体之后创造坠地，但这种连续并非必然，而是出于祂的意志。
@@ -67,3 +61,5 @@
 #include "src/beings.typ"
 
 #part-page("第二部分：智慧生命")
+
+#include "src/species/human.typ"
