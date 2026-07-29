@@ -14,7 +14,7 @@
   #colbreak()
 ]
 
-#part-page("第一部分：基础设定")
+#part-page("基础设定")
 
 #chapter("summary", "summary", "简介")[
   穹苍宇宙是一个天圆地方的世界，其名称来源于希伯来语 רקיע (raqia / rakia)，意为“穹苍”。居民知晓自己所处世界的形状，故以此词指代整片天空。
@@ -60,9 +60,13 @@
 
 #include "src/beings.typ"
 
-#part-page("第二部分：智慧生命")
+#part-page("智慧生命")
 
 #include "src/species/human.typ"
 #include "src/species/elf.typ"
 #include "src/species/dwarf.typ"
+#include "src/species/lithkin.typ"
+#include "src/species/orc.typ"
 #include "src/species/cephalon.typ"
+#include "src/species/reptilian.typ"
+#include "src/species/dragon.typ"

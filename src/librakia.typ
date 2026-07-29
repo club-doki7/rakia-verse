@@ -4,6 +4,7 @@
 #let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)", "Scheherazade New")
 
 #let part-page(title) = [
+  #set page(paper: "iso-b5", numbering: "1")
   #align(
     center+horizon,
     text(
@@ -21,19 +22,16 @@
   )
 ]
 
-#let chapter(xtag, id, title, body) = {
-  set page(paper: "a4", numbering: "1")
-  set text(font: zh-fonts, lang: "zh", size: 11pt)
-  show heading.where(level: 1): set align(center)
-  counter(footnote).update(1)
+#let chapter(xtag, id, title, body) = [
+  #set page(paper: "iso-b5", numbering: "1")
+  #set text(font: zh-fonts, lang: "zh", size: 11pt)
+  #show heading.where(level: 1): set align(center)
+  #counter(footnote).update(1)
 
-  [
-    = #title #if id != none { label(id) }
-    #v(1em)
-
-    #body
-  ]
-}
+  = #title #if id != none { label(id) }
+  #v(1em)
+  #body
+]
 
 #let beings = chapter.with("beings")
 #let species = chapter.with("species")
