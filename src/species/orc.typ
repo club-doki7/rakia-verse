@@ -1,5 +1,5 @@
 #import "../librakia.typ": species, summary
-#import "libspecies.typ": *
+#import "_lib_species.typ": *
 
 #species("species.orc", "兽人与地精")[
   #summary[
