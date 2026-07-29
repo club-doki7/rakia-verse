@@ -67,11 +67,7 @@
     - 与奥术至上教：根本对立。自然之道视其为“最极端的傲慢”。
   </relation-to-others>
 
-  <variants>
-    <variant id="faith.tariq-al-tabia.elf" name="The Elven Path" zh="精灵自然之道">
-    </variant>
+  <variant id="faith.tariq-al-tabia.elf" name="The Elven Path" zh="精灵自然之道" />
 
-    <variant id="faith.tariq-al-tabia.lithkin" name="The Lithkin Path" zh="石裔自然之道">
-    </variant>
-  </variants>
+  <variant id="faith.tariq-al-tabia.lithkin" name="The Lithkin Path" zh="石裔自然之道" />
 </faith>

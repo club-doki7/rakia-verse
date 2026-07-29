@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scripts>
+<scripts xml:lang="en_US">
   <script id="script.check-xml" href="check_xml.py">
     <summary>
       A script to check the XML files in this repository for XML well-formedness,
       counting Chinese characters and English words in XML files, generating a summary report.
     </summary>
     <usage>
-      python projectdir/_scripts/check_xml.py [path]
+      python projectdir/scripts/check_xml.py [path]
       [path] can be a directory or a single XML file.
       If [path] is omitted, the script will check all XML files in the repository.
     </usage>
     <example>
-      python projectdir/_scripts/check_xml.py
-      python projectdir/_scripts/check_xml.py faiths
-      python projectdir/_scripts/check_xml.py faiths/faran.xml
+      python projectdir/scripts/check_xml.py
+      python projectdir/scripts/check_xml.py faiths
+      python projectdir/scripts/check_xml.py faiths/faran.xml
     </example>
   </script>
 
@@ -25,13 +25,13 @@
       need to be included manually, such as images and other non-XML files.
     </summary>
     <usage>
-      python projectdir/_scripts/package.py [output_file]
+      python projectdir/scripts/package.py [output_file]
       [output_file] is the name of the output XML file. If omitted, the default name is
       "rakia-verse-package.xml".
     </usage>
     <example>
-      python projectdir/_scripts/package.py
-      python projectdir/_scripts/package.py dist.xml
+      python projectdir/scripts/package.py
+      python projectdir/scripts/package.py dist.xml
     </example>
   </script>
 
@@ -40,12 +40,12 @@
       A script to edit hex grid data files.
     </summary>
     <usage>
-      python projectdir/_scripts/hex_editor/main.py [inout_file]
+      python projectdir/scripts/hex_editor/main.py [inout_file]
       [inout_file] is the path to the input/output hex grid data file.
     </usage>
     <example>
-      python projectdir/_scripts/hex_editor/main.py
-      python projectdir/_scripts/hex_editor/main.py projectdir/maps/pride.json
+      python projectdir/scripts/hex_editor/main.py
+      python projectdir/scripts/hex_editor/main.py projectdir/maps/pride.json
     </example>
   </script>
 
@@ -54,14 +54,14 @@
       A script to export painted hex grid data to a PNG image.
     </summary>
     <usage>
-      python projectdir/_scripts/hex_editor/export.py [input.json] [output.png]
+      python projectdir/scripts/hex_editor/export.py [input.json] [output.png]
       [input.json] is the path to the input hex grid data file.
       [output.png] is the path to the output PNG image.
       If omitted, the script will use default paths.
     </usage>
     <example>
-      python projectdir/_scripts/hex_editor/export.py
-      python projectdir/_scripts/hex_editor/export.py \
+      python projectdir/scripts/hex_editor/export.py
+      python projectdir/scripts/hex_editor/export.py \
              projectdir/maps/hex_grid_data.json \
              projectdir/maps/hex_export.png
     </example>

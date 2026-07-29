@@ -63,16 +63,15 @@
   <prophets>
   </prophets>
 
-  <variants>
-    <variant id="faith.faran.plain" name="The Plain Faran" zh="平原派">
-      平原派是法兰教的原始分支，也是长期以来信众占比最大的分支，强调对艾尔法拉的直接顺从和义务。
-      - 平原派没有统一的教会组织，而是由各地的学者和法学家群体维系。
-      - 没有人能够垄断经典的解释，尽管解释是有条件的。
-        就如人必须经过训练才能担任医生，但并不是所有医生都必须遵从某一位“权威医生”的意见。
-      - 学者们通过辩论、著述和师徒传承来维护教义的纯正性。
-        不同地区的学者可能在细节问题上有分歧，但在核心教义上保持一致。
-        分歧是艾尔法拉的慈悯，而非教理上的不一致。
-    </variant>
+  <variant id="faith.faran.plain" name="The Plain Faran" zh="平原派">
+    平原派是法兰教的原始分支，也是长期以来信众占比最大的分支，强调对艾尔法拉的直接顺从和义务。
+    - 平原派没有统一的教会组织，而是由各地的学者和法学家群体维系。
+    - 没有人能够垄断经典的解释，尽管解释是有条件的。
+      就如人必须经过训练才能担任医生，但并不是所有医生都必须遵从某一位“权威医生”的意见。
+    - 学者们通过辩论、著述和师徒传承来维护教义的纯正性。
+      不同地区的学者可能在细节问题上有分歧，但在核心教义上保持一致。
+      分歧是艾尔法拉的慈悯，而非教理上的不一致。
+  </variant>
 
     <variant id="faith.faran.hierarchical" name="The Hierarchical Faran" zh="教权派">
     </variant>
@@ -85,5 +84,4 @@
 
     <variant id="faith.faran.revival" name="The Revivalist Faran" zh="复兴派">
     </variant>
-  </variants>
 </faith>

@@ -37,15 +37,15 @@
   </doc>
   <xi:include href="rakia-verse.xml" comment="内容入口" />
 
-  <xi:include href="_/underlined.xml" comment="非正典内容" />
-  <xi:include href="_scripts/scripts.xml" comment="维护脚本" />
+  <xi:include href="src/_/underlined.xml" comment="非正典内容" />
+  <xi:include href="scripts/scripts.xml" comment="维护脚本" />
 
   <acknowledgements>
     特别感谢《韦诺之战》的创作者，为兽人、地精、石裔、食人魔和活尸提供灵感。
   </acknowledgements>
 
   <license pattern="*.xml,*.png,*.svg" href="LICENSE">CC-BY-NC-SA-4.0</license>
-  <license pattern="*.py,*.json" href="docs/LICENSE-BSD3">BSD-3-Clause</license>
+  <license pattern="*.py,*.json" href="LICENSE-BSD3">BSD-3-Clause</license>
   <license pattern="*" fallback="fallback">All rights reserved</license>
-  <code-of-conduct href="docs/CODE_OF_CONDUCT" />
+  <code-of-conduct href="CODE_OF_CONDUCT" />
 </repository>

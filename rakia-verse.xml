@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <universe id="rakia-verse" name="Rakia Verse" zh="穹苍宇宙"
-          xmlns:xi="http://www.w3.org/2001/XInclude">
+          xml:lang="zh_CN" xmlns:xi="http://www.w3.org/2001/XInclude">
   <summary>
     穹苍宇宙是一个天圆地方的世界，其名称来源于希伯来语 רקיע (raqia / rakia)，意为“穹苍”。
     居民知晓自己所处世界的形状，故以此词指代整片天空。
@@ -71,52 +71,52 @@
   </meta-physics>
 
   <!-- 世界地理 -->
-  <xi:include href="maps/maps.xml" />
+  <xi:include href="src/maps/maps.xml" />
 
   <!-- 强大的存在 -->
-  <xi:include href="beings.xml" />
+  <xi:include href="src/beings.xml" />
 
   <!-- 智慧物种 -->
   <species type="intelligent">
-    <xi:include href="species/human.xml" comment="人类" />
-    <xi:include href="species/elf.xml" comment="精灵" />
-    <xi:include href="species/orc.xml" comment="兽人与地精" />
-    <xi:include href="species/lithkin.xml" comment="石裔" />
-    <xi:include href="species/cephalon.xml" comment="珂拉墨" />
-    <xi:include href="species/dwarf.xml" comment="矮人" />
-    <xi:include href="species/dragon.xml" comment="龙" />
+    <xi:include href="src/species/human.xml" comment="人类" />
+    <xi:include href="src/species/elf.xml" comment="精灵" />
+    <xi:include href="src/species/orc.xml" comment="兽人与地精" />
+    <xi:include href="src/species/lithkin.xml" comment="石裔" />
+    <xi:include href="src/species/cephalon.xml" comment="珂拉墨" />
+    <xi:include href="src/species/dwarf.xml" comment="矮人" />
+    <xi:include href="src/species/dragon.xml" comment="龙" />
 
     <!-- 两情若是长久时，又岂在界门纲目 -->
-    <xi:include href="species/half-elf.xml" comment="半精灵" />
-    <xi:include href="species/half-orc.xml" comment="半兽人" />
-    <xi:include href="species/gnome.xml" comment="侏儒" />
-    <xi:include href="species/reptilian.xml" comment="蜥蜴人" />
+    <xi:include href="src/species/half-elf.xml" comment="半精灵" />
+    <xi:include href="src/species/half-orc.xml" comment="半兽人" />
+    <xi:include href="src/species/gnome.xml" comment="侏儒" />
+    <xi:include href="src/species/reptilian.xml" comment="蜥蜴人" />
   </species>
 
   <species type="monster">
     <!-- 威世智慧：智力要至少为 4 才能学会语言；智力 ≤ 3 的只能挂动物交谈，算动物 -->
-    <xi:include href="monsters/fish-men.xml" comment="鱼人" />
-    <xi:include href="monsters/ogre.xml" comment="食人魔" />
+    <xi:include href="src/monsters/fish-men.xml" comment="鱼人" />
+    <xi:include href="src/monsters/ogre.xml" comment="食人魔" />
 
     <!-- 虽然禁止死人复活，但总有人跃跃欲试 -->
-    <xi:include href="monsters/zombie.xml" comment="活尸" />
-    <xi:include href="monsters/ghoul.xml" comment="食尸鬼" />
+    <xi:include href="src/monsters/zombie.xml" comment="活尸" />
+    <xi:include href="src/monsters/ghoul.xml" comment="食尸鬼" />
   </species>
 
   <!-- 文化 -->
   <civils>
-    <xi:include href="civils/writing-systems.xml" comment="书写系统 / 文字" />
-    <xi:include href="civils/languages.xml" comment="语言" />
-    <xi:include href="civils/currencies.xml" comment="货币" />
+    <xi:include href="src/civils/writing-systems.xml" comment="书写系统 / 文字" />
+    <xi:include href="src/civils/languages.xml" comment="语言" />
+    <xi:include href="src/civils/currencies.xml" comment="货币" />
   </civils>
 
   <!-- 魔术：超自然现象 -->
   <sihrs>
-    <xi:include href="sihrs/summary.xml" />
-    <xi:include href="sihrs/arcane.xml" comment="奥术魔术" />
-    <xi:include href="sihrs/runeic.xml" comment="符文魔术" />
-    <xi:include href="sihrs/divine.xml" comment="神术魔术" />
-    <xi:include href="sihrs/natural.xml" comment="自然魔术" />
+    <xi:include href="src/sihrs/summary.xml" />
+    <xi:include href="src/sihrs/arcane.xml" comment="奥术魔术" />
+    <xi:include href="src/sihrs/runeic.xml" comment="符文魔术" />
+    <xi:include href="src/sihrs/divine.xml" comment="神术魔术" />
+    <xi:include href="src/sihrs/natural.xml" comment="自然魔术" />
   </sihrs>
 
   <!-- 信仰 -->
@@ -127,33 +127,33 @@
       谁遵循正道，谁自受其益；谁误入迷途，谁自受其害。
       一个负罪者，不负他人的罪。派遣使者之前，我不惩罚（任何人）。
     -->
-    <xi:include href="faiths/faran.xml" comment="法兰教" />
-    <xi:include href="faiths/tariq-al-tabia.xml" comment="自然之道" />
+    <xi:include href="src/faiths/faran.xml" comment="法兰教" />
+    <xi:include href="src/faiths/tariq-al-tabia.xml" comment="自然之道" />
 
-    <xi:include href="faiths/changism.xml" comment="冐教" />
-    <xi:include href="faiths/arcane-orthodoxy.xml" comment="奥术至上教" />
-    <xi:include href="faiths/mammon.xml" comment="玛门崇拜" />
-    <xi:include href="faiths/creed-of-might.xml" comment="力之信条" />
-    <xi:include href="faiths/polytheism.xml" comment="多神教与泛灵论" />
-    <xi:include href="faiths/gnosticism.xml" comment="灵知论 / 诺斯替主义" />
+    <xi:include href="src/faiths/changism.xml" comment="冐教" />
+    <xi:include href="src/faiths/arcane-orthodoxy.xml" comment="奥术至上教" />
+    <xi:include href="src/faiths/mammon.xml" comment="玛门崇拜" />
+    <xi:include href="src/faiths/creed-of-might.xml" comment="力之信条" />
+    <xi:include href="src/faiths/polytheism.xml" comment="多神教与泛灵论" />
+    <xi:include href="src/faiths/gnosticism.xml" comment="灵知论 / 诺斯替主义" />
   </faiths>
 
   <!-- 历史 -->
   <history>
     <!-- 编年体 -->
-    <xi:include href="history/timeline.xml" comment="时间线" />
+    <xi:include href="src/history/timeline.xml" comment="时间线" />
 
     <events>
-      <xi:include href="history/event_bk1692_creation.xml" comment="造人" />
-      <xi:include href="history/event_bk1238_hijrah.xml" comment="迁徙" />
-      <xi:include href="history/event_bk642_battle_of_ashfang_peak.xml" comment="灰牙峰之战" />
-      <xi:include href="history/event_kc0325_catastrophe.xml" comment="索尔穆恩之殇" />
+      <xi:include href="src/history/event_bk1692_creation.xml" comment="造人" />
+      <xi:include href="src/history/event_bk1238_hijrah.xml" comment="迁徙" />
+      <xi:include href="src/history/event_bk642_battle_of_ashfang_peak.xml" comment="灰牙峰之战" />
+      <xi:include href="src/history/event_kc0325_catastrophe.xml" comment="索尔穆恩之殇" />
     </events>
 
     <!-- 纪传体 / 拉丁名人传等 -->
     <biographies>
-      <xi:include href="history/bio_ibn_sunyavar.xml" comment="DE SHAVLIO / 善利·伊本·苏亚瓦" />
-      <xi:include href="history/bio_chi_fangning.xml" comment="姬怀远世家" />
+      <xi:include href="src/history/bio_ibn_sunyavar.xml" comment="DE SHAVLIO / 善利·伊本·苏亚瓦" />
+      <xi:include href="src/history/bio_chi_fangning.xml" comment="姬怀远世家" />
     </biographies>
 
     <!-- 纪事本末体 -->
@@ -166,20 +166,20 @@
 
   <!-- 科技：材料、物品与技术 -->
   <techs>
-    <xi:include href="techs/aspects/navigation.xml" comment="导航" />
-    <xi:include href="techs/aspects/communication.xml" comment="通讯" />
-    <xi:include href="techs/aspects/alchemy.xml" comment="炼金术" />
+    <xi:include href="src/techs/aspects/navigation.xml" comment="导航" />
+    <xi:include href="src/techs/aspects/communication.xml" comment="通讯" />
+    <xi:include href="src/techs/aspects/alchemy.xml" comment="炼金术" />
 
-    <xi:include href="techs/material-properties.xml" comment="材料属性" />
+    <xi:include href="src/techs/material-properties.xml" comment="材料属性" />
     <materials>
-      <xi:include href="techs/materials/corundum.xml" comment="刚玉" />
-      <xi:include href="techs/materials/maknet.xml" comment="玼石" />
-      <xi:include href="techs/materials/mithril.xml" comment="秘银" />
-      <xi:include href="techs/materials/orichalcum.xml" comment="精金" />
+      <xi:include href="src/techs/materials/corundum.xml" comment="刚玉" />
+      <xi:include href="src/techs/materials/maknet.xml" comment="玼石" />
+      <xi:include href="src/techs/materials/mithril.xml" comment="秘银" />
+      <xi:include href="src/techs/materials/orichalcum.xml" comment="精金" />
     </materials>
 
     <items>
-      <xi:include href="techs/items/maknet-compass.xml" comment="玼罗盘" />
+      <xi:include href="src/techs/items/maknet-compass.xml" comment="玼罗盘" />
     </items>
   </techs>
 </universe>
