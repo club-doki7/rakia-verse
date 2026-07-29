@@ -1,4 +1,13 @@
-#import "./src/style.typ": chapter, section
+#import "./src/style.typ": zh-fonts, part-page, chapter, section
+
+#[
+  #set text(font: zh-fonts, lang: "zh", size: 11pt)
+  #show heading: set align(center)
+  #outline(title: "目录")
+  #colbreak()
+]
+
+#part-page("第一部分：基础设定")
 
 #chapter(
   title: "简介",

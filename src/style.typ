@@ -3,6 +3,8 @@
 #let zh-fonts = ("Libertinus Serif", "Noto Serif SC", "Noto Serif CJK SC", "Scheherazade New")
 #let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)", "Scheherazade New")
 
+#let part-page(title) = align(center+horizon, text(font: zh-fonts, lang: "zh", size: 24pt, weight: "bold", title))
+
 #let chapter(title: "", id: none, meta: none, body) = {
   set page(paper: "a4", numbering: "1", margin: (top: 2.25cm, bottom: 2.25cm))
   set text(font: zh-fonts, lang: "zh", size: 11pt)
