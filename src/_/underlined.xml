@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<underlined xml:lang="en_US">
+  <summary>
+    Underlined directories are not part of the main content, but contain additional materials such
+    as drafts, scripts, humor, and obsolete content. You should skip these content when creating
+    canon works.
+  </summary>
+
+  <dir id="underlined._draft" href="_draft/">
+    Drafts and work-in-progress materials that have not yet been finalized or incorporated into the
+    main worldbuilding content.
+  </dir>
+
+  <dir id="underlined._humor" href="_humor/">
+    Humorous and satirical content created for entertainment purposes, not to be treated as canon
+    lore.
+  </dir>
+
+  <dir id="underlined._obsolete" href="_obsolete/">
+    Scrapped content that has been replaced or removed from the current worldbuilding canon. Kept
+    for archival reference only.
+  </dir>
+
+  <dir id="underlined._novel" href="_novel/">
+    Isekai toilet paper.
+  </dir>
+
+  <dir id="underlined.kuiter" href="kuiter/">
+    Kuiter is another fictional worldbuilding project that is not part of the main Rakia Verse
+    canon. It contains its own lore, characters, and settings, and should be treated as a
+    separate work.
+  </dir>
+</underlined>

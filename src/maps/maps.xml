@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maps>
+  <group id="maps.fullscale" width="4500" height="4254" pixel="6km">
+    <map id="map.border" type="borders" href="map-border.png" />
+    <map id="map.terrain" type="terrain" href="map-terrain.png" />
+  </group>
+
+  <group id="maps.hexgrid" width="390" height="426" width-px="6750" height-px="6381"
+         grid-side="40km" grid-diagnal="80km" grid-vertical="69.282032km" pixel="4km">
+    <map id="map.geographical-regions" href="geo-regions-390x426.maped">
+      <region index="1" id="region.al-nur" name="Shibh Jazīrat al-Nūr" zh="努尔半岛" />
+      <region index="2" id="region.sabz" name="Dālān-e Sabz" zh="萨布兹走廊" />
+      <region index="3" id="region.aurelia" name="Aurelia" zh="奥雷利亚" />
+      <region index="4" id="region.badkuh" name="Bādkūh" zh="巴德库赫" />
+      <region index="5" id="region.solmaris" name="Solmaris Peninsula" zh="索尔玛里斯半岛" />
+      <region index="6" id="region.syahdarya" name="Kanār-e Syāhdaryā" zh="锡亚赫沿岸" />
+      <region index="7" id="region.palirroia" name="Palirroia Peninsula" zh="帕里利亚半岛" />
+      <region index="8" id="region.hesperia" name="Hesperia" zh="赫斯珀里亚" />
+      <region index="9" id="region.litoria" name="Litoria" zh="利托里亚" />
+      <region index="10" id="region.chlororea" name="Chlororea" zh="克罗瑞亚山地" />
+
+      <region index="18" id="region.trisestra" name="Trisestra" zh="三姐妹群岛" />
+    </map>
+  </group>
+</maps>

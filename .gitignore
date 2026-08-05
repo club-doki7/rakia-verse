@@ -1,0 +1,7 @@
+rakia-verse-package.xml
+dist.xml
+**/__pycache__
+**/.claude
+_sessions
+
+src/maps/map-*-1.5x.png

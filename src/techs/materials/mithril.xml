@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<material id="material.mithril" name="Mithril" zh="秘银" since="~2000BK">
+  <summary>
+    秘银是一种极稀有的金属，具有极高的强度和韧性，同时重量极轻，
+    且能与魔术材料相互嵌合，经不同加工方式而具有顺魔力或拒魔力，
+    因而是穹苍宇宙中重要的稀有材料，常被用于高端武器、护甲和法器的制造。
+    由于其稀有度远甚于黄金，且开采分离仅有自然魔术一途，其开采与加工常年由精灵垄断，
+    这种稀缺性自然带来了高昂的价格，直到矮人和人类开始稳定地开采并冶炼精金才有所缓解。
+  </summary>
+
+  <properties group="material.properties.physical" style="ini">
+    hardness = 9.5 Mohs
+    density = 3.6 g/cm³
+    melting-point = 2650 °C
+    youngs-modulus = 250 GPa
+    tensile-strength = 2500 MPa
+    fracture-toughness = 102 MPa·√m
+    thermal-conductivity = 18 W/(m·K)
+    luster = 金属光泽，表面泛冷蓝色荧光，抛光后近镜面
+    color = 银白色，光照下显现幽蓝冷光
+  </properties>
+</material>

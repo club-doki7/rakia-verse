@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts xml:lang="en_US">
+  <script id="script.check-xml" href="check_xml.py">
+    <summary>
+      A script to check the XML files in this repository for XML well-formedness,
+      counting Chinese characters and English words in XML files, generating a summary report.
+    </summary>
+    <usage>
+      python projectdir/scripts/check_xml.py [path]
+      [path] can be a directory or a single XML file.
+      If [path] is omitted, the script will check all XML files in the repository.
+    </usage>
+    <example>
+      python projectdir/scripts/check_xml.py
+      python projectdir/scripts/check_xml.py faiths
+      python projectdir/scripts/check_xml.py faiths/faran.xml
+    </example>
+  </script>
+
+  <script id="script.package" href="package.py">
+    <summary>
+      A script to package all the XML document files into a single XML file, which can be used for
+      distribution purposes. The script will resolve all XInclude references and generate a single
+      XML file containing all the XML textual content of the repository. Additional files still
+      need to be included manually, such as images and other non-XML files.
+    </summary>
+    <usage>
+      python projectdir/scripts/package.py [output_file]
+      [output_file] is the name of the output XML file. If omitted, the default name is
+      "rakia-verse-package.xml".
+
+      If the option "--no-emit" is specified, the script will only perform parsing and validation,
+      and will not write the output file.
+    </usage>
+    <example>
+      python projectdir/scripts/package.py
+      python projectdir/scripts/package.py dist.xml
+    </example>
+  </script>
+
+  <script id="script.calendar-convert" href="calendar_convert.py">
+    <summary>
+      A script to convert dates between the Kingdom Calendar (KC/BK, 360 days per year,
+      15 months of 24 days) and the Hijri Calendar (AH/BH, 343 days per year, 7 months
+      of 49 days). The epoch anchor is 0001-01-01AH = 1232-08-23BK. Neither calendar
+      has a year 0.
+    </summary>
+    <usage>
+      python projectdir/scripts/calendar_convert.py [date ...]
+      [date] can be a full date like "1232-08-23BK" or "0001-01-01AH" for exact
+      conversion, or a bare year like "618BK" to get the corresponding year range.
+      Multiple dates can be given at once.
+
+      If no argument is given, the script enters interactive stdio mode, reading
+      one date per line ("q" to quit).
+    </usage>
+    <example>
+      python projectdir/scripts/calendar_convert.py 1232-08-23BK
+      python projectdir/scripts/calendar_convert.py 618BK 0325KC
+      python projectdir/scripts/calendar_convert.py
+    </example>
+  </script>
+
+  <script id="script.scale-maps" href="scale_maps.py">
+    <summary>
+      A helper script to scale the two map images in the repository to 1.5x their original size,
+      using nearest neighbor resampling for the border map and Lanczos resampling for the main map.
+    </summary>
+    <usage>
+      python projectdir/scripts/scale_maps.py
+    </usage>
+    <example>
+      python projectdir/scripts/scale_maps.py
+    </example>
+  </script>
+</scripts>

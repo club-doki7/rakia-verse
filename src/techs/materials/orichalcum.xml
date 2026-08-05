@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<material id="material.orichalcum" name="Orichalcum" zh="精金" since="725BK">
+  <summary>
+    精金是一种极坚硬的稀有金属，刚性极强，硬度与金刚石并列，
+    密度较高而手感沉实，对魔力呈中性态度，既不导魔亦不拒魔。
+    其冶炼难度虽高但不及秘银，矮人率先掌握了地熔炉冶炼技术，人类随后习得。
+    精金相较秘银价格更为可及，且相比秘银更容易制成合金，在普通金属中加入少许即可大幅提升性能。
+  </summary>
+
+  <properties group="material.properties.physical" style="ini">
+    hardness = 10 Mohs
+    density = 6.5 g/cm³
+    melting-point = 2300 °C
+    youngs-modulus = 400 GPa
+    tensile-strength = 2200 MPa
+    fracture-toughness = 55 MPa·√m
+    thermal-conductivity = 52 W/(m·K)
+    luster = 金属光泽，沉稳厚重，抛光后呈镜面暗金色反射
+    color = 深灰近黑，光照下显现暗金色底色
+  </properties>
+</material>

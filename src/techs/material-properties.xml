@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<material-properties>
+  <properties-group id="material.properties.physical">
+    <property key="hardness" unit="Mohs">
+      莫氏硬度：矿物抗划伤能力的标准量表，1（滑石）至 10（金刚石）。
+      参考：指甲 2.5 / 铜币 3.5 / 玻璃 5.5 / 钢锉 6.5 / 刚玉 9 / 金刚石 10
+    </property>
+    <property key="density" unit="g/cm³">
+      密度：单位体积的质量，影响武器、护甲的重量手感。
+      参考：水 1.0 / 铝 2.7 / 钛 4.5 / 铁 7.85 / 铜 8.9 / 铅 11.3 / 金 19.3
+    </property>
+    <property key="melting-point" unit="°C">
+      熔点：材料由固态转为液态的温度，决定冶炼与铸造的难度。
+      参考：锡 232 / 铝 660 / 银 962 / 金 1064 / 铜 1085 / 铁 1538 / 钨 3422
+    </property>
+    <property key="glass-transition" unit="°C" applies="amorphous">
+      玻璃化转变温度（Tg）：非晶体从刚性玻璃态过渡到可塑态的温度，即“开始软化。
+      晶体材料不适用此属性。
+      参考：聚碳酸酯 150 / 普通钠钙玻璃 550 / 石英玻璃 1200
+    </property>
+    <property key="softening-point" unit="°C" applies="amorphous">
+      软化点：非晶体在自重下开始明显变形的温度，通常比 Tg 高数十至百余度。
+      参考：钠钙玻璃 730 / 硼硅玻璃 820 / 石英玻璃 1665
+    </property>
+    <property key="youngs-modulus" unit="GPa">
+      杨氏模量：材料在弹性范围内抵抗形变的能力，值越高越“硬挺”。
+      参考：骨骼 14 / 铝 69 / 铜 117 / 钢 200 / 钨 411 / 金刚石 1050
+    </property>
+    <property key="tensile-strength" unit="MPa">
+      抗拉强度：材料断裂前所能承受的最大拉伸应力。
+      参考：纯铁 200 / 青铜 450 / 低碳钢 400 / 弹簧钢 1200 / 钢琴丝 2800
+    </property>
+    <property key="fracture-toughness" unit="MPa·√m">
+      断裂韧性：材料在裂纹存在时抵抗脆性断裂的能力，值越高越不易崩口。
+      参考：玻璃 0.7 / 陶瓷 3-5 / 高碳钢 30 / 弹簧钢 60 / 纯钛 70 / 低碳钢 140
+    </property>
+    <property key="thermal-conductivity" unit="W/(m·K)">
+      热导率：材料传导热量的速率，影响其在高温环境下的表现。
+      参考：木材 0.2 / 钛 22 / 钢 45 / 铝 237 / 金 317 / 铜 401 / 银 429
+    </property>
+    <property key="luster">
+      光泽：材料表面对光线的反射特征，描述其视觉质感。
+      常见类型：金属光泽 / 金刚光泽 / 玻璃光泽 / 蜡状光泽 / 丝绢光泽 / 土状光泽
+    </property>
+    <property key="color">
+      颜色：材料的固有色及在不同光照条件下的呈现。
+    </property>
+  </properties-group>
+
+  <properties-group id="material.properties.sihr">
+    <property key="conductivity" type="level-i-vii">
+      魔力传导性：材料对魔力流通的导通或阻隔能力，
+      影响其作为法器材料、魔术物品基底、奥术魔术回路载体、符文载体的适用性。
+
+      等级说明：
+      - I 级：强烈抗拒或散逸魔力（天然屏蔽）
+      - II 级：弱导通，魔力经过时有一定衰减
+      - III 级：轻微干扰，魔力经过时有明显衰减
+      - IV 级：中性，既不导通也不阻隔
+      - V 级：良好导体，魔力通过时衰减较小
+      - VI 级：优良导体，适合作为回路主材
+      - VII 级：极佳导体，魔力近乎无损通过
+
+      参考：精金 IV（中性）/ 普通铁 III（轻微干扰）/ 玼石 VI（优良导体）/ 秘银（取决于加工方式）
+    </property>
+    <property key="static-modulation" type="boolean">
+      静态调制：材料在加工阶段能否被定向为两种截然不同的魔术响应态（顺魔或拒魔）。
+      选择在制造时一次性确定，除非重铸否则无法更改。
+
+      取值说明：
+      - true：加工时可选择制成导魔体或绝魔体，如秘银可被精灵工艺加工为魔术导体（法器基底）
+              或魔术绝缘体（魔抗护甲）
+      - false：传导性固定，加工不改变其魔术响应方式
+    </property>
+    <property key="dynamic-modulation" type="level-i-vii|false">
+      动态调制：材料经加工后能否以微弱控制信号动态调控魔力流的通断与流量。
+
+      等级说明：
+      - I 级：仅能实现粗糙的通断控制，响应迟缓
+      - II 级：可控制通断，流量调节范围窄
+      - III 级：中等精度的流量控制，适合简单逻辑回路
+      - IV 级：较精细的流量调控，可构建多级串联回路
+      - V 级：高精度调制，适合复杂回路中的有源节点
+      - VI 级：极精细控制，支持高频切换与微弱信号放大
+      - VII 级：近乎无级调制，可实现任意精度的魔力流控制
+      - false：完全无法具备动态调控能力（可能仍具备静态调制）
+
+      参考：玼石 IV~V（视品质）
+    </property>
+    <property key="transmutation-potential" type="level-i-vii">
+      嬗变潜势：炼金术势调制理论中，材料距离终态（铁）的潜能距离。潜势越高，激活
+      嬗变所需能量越大，但可变换的目标元质也越多。
+
+      等级说明：
+      - I 级：终态或近终态，几乎不可嬗变（铁本身）
+      - II 级：极低活性，仅可微调杂质比例
+      - III 级：低活性，嬗变路径有限
+      - IV 级：中等活性，激活门槛适中，路径较灵活
+      - V 级：高活性，可变换多种目标元质
+      - VI 级：极高活性，嬗变路径宽广，且可能包含稀有元质
+      - VII 级：最高活性，嬗变产物多样，且可能包含稀有元质
+
+      参考：铁 I（终态，定义基准）/ 普通银 III / 汞 V / 铅 VI（灵活，激活门槛低）
+    </property>
+    <property key="generation" applies="mana-source" type="level-i-vii|false">
+      魔力生成：材料自行产生或汇聚环境魔力的能力，仅适用于具有天然魔力源特性的材料（如活性玼石）。
+      晶体结构或魔术惰性材料不适用此属性。
+
+      等级说明：
+      - I 级：极缓慢的被动汇聚，仅够维持自身结构稳定
+      - II 级：微弱产出，可为最简单的单词咒提供涓流
+      - III 级：低速再生，可维持简易附魔的长期运作
+      - IV 级：稳定产出，足以驱动中等复杂度的附魔物品
+      - V 级：较强产出，可同时供给多个回路
+      - VI 级：强劲再生，可作为附魔物品的主魔力源
+      - VII 级：持续大量输出，可驱动复杂仪式级回路
+      - false：完全不生成魔力
+
+      参考：普通玼石（导体，不产魔，无此属性）/ 活性玼石 IV~VI（视矿脉品质）
+    </property>
+  </properties-group>
+</material-properties>

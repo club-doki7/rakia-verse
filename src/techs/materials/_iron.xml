@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<material id="material._iron" name="Iron" zh="钢铁 (供参考)">
+  <variant id="material._iron.5160" name="5160 Spring Steel" zh="5160 弹簧钢">
+    <summary>
+      5160 是一种含铬弹簧钢，现实中广泛用于刀剑锻造，
+      以优秀的韧性和适中的硬度著称，是衡量奇幻金属性能的常用基准。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 7 Mohs (≈58-62 HRC)
+      density = 7.85 g/cm³
+      melting-point = 1500 °C
+      youngs-modulus = 205 GPa
+      tensile-strength = 1200 MPa
+      fracture-toughness = 60 MPa·√m
+      thermal-conductivity = 45 W/(m·K)
+      luster = 金属光泽，抛光后呈亮银色，易氧化变暗
+      color = 银灰色
+    </properties>
+  </variant>
+
+  <variant id="material._iron.9260" name="9260 Silicon-Manganese Steel" zh="9260 硅锰弹簧钢">
+    <summary>
+      9260 含碳约 0.6%、硅约 2%、锰约 0.9%，是高硅弹簧钢的代表。
+      硅含量赋予其极高的弹性极限，刀身可弯曲近 90° 后回弹复位而不永久变形，
+      韧性在所有刀具钢中名列前茅，常用于需要承受极端横向冲击的长刀剑。
+      代价是研磨较困难，且硅使淬火脱碳风险增大，热处理需格外注意。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 7 Mohs (≈58-60 HRC)
+      density = 7.85 g/cm³
+      melting-point = 1500 °C
+      youngs-modulus = 205 GPa
+      tensile-strength = 1150 MPa
+      fracture-toughness = 70 MPa·√m
+      thermal-conductivity = 46 W/(m·K)
+      luster = 金属光泽，抛光后银亮，与5160外观接近
+      color = 银灰色
+    </properties>
+  </variant>
+
+  <variant id="material._iron.1095" name="1095 High Carbon Steel" zh="1095 高碳钢">
+    <summary>
+      1095 是最经典的高碳刀具钢，含碳量约 0.95%，无额外合金元素。
+      淬火后硬度极高、刃口锋利持久，但韧性不如弹簧钢，适合切割类刀具，不适合承受大幅度横向冲击。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 7.5 Mohs (≈60-65 HRC)
+      density = 7.85 g/cm³
+      melting-point = 1490 °C
+      youngs-modulus = 210 GPa
+      tensile-strength = 1300 MPa
+      fracture-toughness = 35 MPa·√m
+      thermal-conductivity = 45 W/(m·K)
+      luster = 金属光泽，抛光后亮银色，极易生锈
+      color = 银灰色，未处理表面迅速氧化变黑
+    </properties>
+  </variant>
+
+  <variant id="material._iron.15n20" name="15N20 Nickel Steel" zh="15N20 镍钢">
+    <summary>
+      15N20 是一种含镍低碳钢，最常与 1095 交替叠锻制作大马士革花纹钢，充当其中的亮层。
+      镍含量约 2% 赋予其抗腐蚀性和抛光后的亮白色泽，韧性优秀但硬度不及高碳钢，几乎从不单独使用。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 6.5 Mohs (≈40-45 HRC)
+      density = 7.87 g/cm³
+      melting-point = 1510 °C
+      youngs-modulus = 200 GPa
+      tensile-strength = 900 MPa
+      fracture-toughness = 80 MPa·√m
+      thermal-conductivity = 42 W/(m·K)
+      luster = 金属光泽，镍含量使其抛光后呈亮白色，抗蚀性较好
+      color = 亮银白色，蚀刻后与高碳层形成对比花纹
+    </properties>
+  </variant>
+
+  <variant id="material._iron.80crv2" name="80CrV2 Tool Steel" zh="80CrV2 铬钒工具钢">
+    <summary>
+      80CrV2 是欧洲风格的铬钒合金工具钢，含碳约 0.8%，铬和钒各约 0.5%。
+      兼具高碳钢的硬度和弹簧钢的韧性，被认为是当代<del>断刀大赛</del>锻刀大赛中的“全能选手”，
+      热处理窗口宽容，研磨性好，综合表现优异。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 7.5 Mohs (≈60-63 HRC)
+      density = 7.83 g/cm³
+      melting-point = 1500 °C
+      youngs-modulus = 210 GPa
+      tensile-strength = 1400 MPa
+      fracture-toughness = 55 MPa·√m
+      thermal-conductivity = 44 W/(m·K)
+      luster = 金属光泽，抛光后银亮，蚀刻后显深灰
+      color = 银灰色
+    </properties>
+  </variant>
+
+  <variant id="material._iron.w1" name="W1/W2 Water-Hardening Steel" zh="W1/W2 水淬工具钢">
+    <summary>
+      W1/W2 是最古老的工具钢类型，含碳约 0.9-1.1%，成分极简（近纯碳钢）。
+      淬火硬度极高但淬透性差，仅表面硬化而芯部保持韧性，形成天然“差异淬火”效果。
+      日本传统刀匠使用的玉钢（Tamahagane）在成分上与 W2 相近，是理解历史锻造工艺的重要参照。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 7.5 Mohs (≈62-66 HRC 表面)
+      density = 7.85 g/cm³
+      melting-point = 1490 °C
+      youngs-modulus = 210 GPa
+      tensile-strength = 1350 MPa
+      fracture-toughness = 30 MPa·√m
+      thermal-conductivity = 48 W/(m·K)
+      luster = 金属光泽，淬火后可现刃文（hamon）
+      color = 银灰色，极易生锈形成暗褐色锈皮
+    </properties>
+  </variant>
+
+  <variant id="material._iron.1045" name="1045 Medium Carbon Steel" zh="1045 中碳钢">
+    <summary>
+      1045 含碳约 0.45%，是典型的中碳结构钢。
+      硬度不及高碳钢但韧性显著更好，价格低廉、易于加工，
+      常见于廉价刀剑、机械零件和入门级锻造练习。
+      <del>断刀大赛</del>锻刀大赛里的“铁路道钉挑战”用的就是这类材料。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 6 Mohs (≈45-50 HRC)
+      density = 7.85 g/cm³
+      melting-point = 1510 °C
+      youngs-modulus = 205 GPa
+      tensile-strength = 750 MPa
+      fracture-toughness = 75 MPa·√m
+      thermal-conductivity = 49 W/(m·K)
+      luster = 金属光泽，与普通碳钢无异
+      color = 银灰色
+    </properties>
+  </variant>
+
+  <variant id="material._iron.cast-iron" name="Cast Iron" zh="铸铁">
+    <summary>
+      铸铁含碳量 2-4%，熔点低、流动性好，适合铸造复杂形状，
+      但碳以片状石墨析出导致材料极脆，几乎无法承受弯曲或冲击。
+      历史上用于炮管、锅具和建筑构件，从不用于刀剑——
+      但总有参赛选手带着铸铁来 Forged in Fire 试试运气。
+
+      <!-- It will not keel. —— Doug Marcaida -->
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 5.5 Mohs (≈35-50 HRC，视类型)
+      density = 7.2 g/cm³
+      melting-point = 1150 °C
+      youngs-modulus = 130 GPa
+      tensile-strength = 200 MPa
+      fracture-toughness = 15 MPa·√m
+      thermal-conductivity = 55 W/(m·K)
+      luster = 暗淡金属光泽，表面粗糙多孔
+      color = 深灰近黑，断面可见石墨片层
+    </properties>
+  </variant>
+
+  <variant id="material._iron.wrought-iron" name="Wrought Iron" zh="熟铁">
+    <summary>
+      熟铁含碳极低（＜0.08%），含有丝状石墨渣（硅酸盐夹杂），
+      质地柔软、极富延展性，可反复折叠锻打而不裂。
+      无法通过淬火硬化，因此不能保持刃口，但耐腐蚀性优于碳钢。
+      历史上是铁门、栏杆、铁钉和锁子甲的主要材料，
+      在现代<del>断刀大赛</del>锻刀大赛中可作为三枚合的“软芯”或装饰性锻焊素材。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 4.5 Mohs (≈80-120 HB)
+      density = 7.7 g/cm³
+      melting-point = 1530 °C
+      youngs-modulus = 190 GPa
+      tensile-strength = 350 MPa
+      fracture-toughness = 100+ MPa·√m (极难脆断)
+      thermal-conductivity = 59 W/(m·K)
+      luster = 金属光泽，锻打后表面呈纤维状纹理
+      color = 银灰色，生锈后呈暖褐色，锈层致密有保护性
+    </properties>
+  </variant>
+
+  <variant id="material._iron.304" name="304 Austenitic Stainless Steel" zh="304 奥氏体不锈钢">
+    <summary>
+      304 不锈钢含铬 18%、镍 8%，是最常见的奥氏体不锈钢。
+      铬含量在表面形成致密氧化铬薄膜，几乎完全不锈，这是碳钢无论如何抛光都做不到的。
+      代价是奥氏体结构无法淬火硬化，硬度极低、保刃性约等于零，抗拉强度仅碳钢一半，导热也差。
+      简言之：除了不生锈，其他方面全面劣于普通碳钢，至少在刀剑语境下是这样。
+      现实中广泛用于厨具、栏杆、医疗器械和化工容器。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 5 Mohs (≈70-90 HRB，无法以 HRC 计量)
+      density = 8.0 g/cm³
+      melting-point = 1450 °C
+      youngs-modulus = 193 GPa
+      tensile-strength = 580 MPa
+      fracture-toughness = 100+ MPa·√m (极难脆断)
+      thermal-conductivity = 16 W/(m·K)
+      luster = 明亮银白金属光泽，长期保持不变色
+      color = 银白色，永不生锈
+    </properties>
+  </variant>
+</material>

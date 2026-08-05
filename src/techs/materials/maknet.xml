@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<material id="material.maknet" name="Maknet" zh="玼石" since="~1550BK">
+  <summary>
+    玼石是穹苍世界最重要的矿物之一，是天然的奥术导体，有些还是天然的奥术能量源。
+    玼石被广泛应用于奥术研究、魔术物品和附魔物品，推动着文明的发展和技术的进步。
+  </summary>
+
+  <properties group="material.properties.physical" style="ini">
+    hardness = 6.5 Mohs
+    density = 6.8 g/cm³
+    melting-point = 1420 °C
+    youngs-modulus = 185 GPa
+    tensile-strength = 320 MPa
+    fracture-toughness = 4.2 MPa·√m
+    thermal-conductivity = 18 W/(m·K)
+    luster = 金属-玻璃质，表面呈虹彩氧化色
+    color = 基底银灰，晶面因薄膜干涉显现蓝紫、金、翠绿等光泽，类似铋晶体
+  </properties>
+</material>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<material id="material._metal" name="Other Metals" zh="其他金属 (供参考)">
+
+  <!-- ═══ 青铜 ═══════════════════════════════════════════════════════════ -->
+
+  <variant id="material._metal.bronze-sn10" name="Tin Bronze (Cu-10Sn)" zh="锡青铜 (Cu-10Sn)">
+    <summary>
+      经典锡青铜，含锡约 10%，是青铜时代刀剑的主要材料。
+      硬度远不及钢，但铸造性好、耐海水腐蚀，在铁器普及前是人类最优武器材料。
+      现代仍用于船舶螺旋桨、轴承和铃铛。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 3.5 Mohs (≈80-120 HB，冷锻后可达 200 HB)
+      density = 8.8 g/cm³
+      melting-point = 1000 °C
+      youngs-modulus = 110 GPa
+      tensile-strength = 450 MPa (冷加工态)
+      fracture-toughness = 50 MPa·√m
+      thermal-conductivity = 50 W/(m·K)
+      luster = 金属光泽，新铸呈金黄色，氧化后转青绿色（铜绿）
+      color = 金黄至红棕色
+    </properties>
+  </variant>
+
+  <variant id="material._metal.bronze-sn20" name="High-Tin Bronze (Cu-20Sn)" zh="高锡青铜 (Cu-20Sn)">
+    <summary>
+      高锡青铜含锡约 20%，硬度显著提升但极脆，无法锻打只能铸造后研磨。
+      中国古代青铜剑（如越王勾践剑）刃部即为此类高锡配比，
+      剑脊则用低锡青铜保证韧性，形成"复合剑"结构。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 5 Mohs (≈250-350 HB)
+      density = 8.6 g/cm³
+      melting-point = 900 °C
+      youngs-modulus = 100 GPa
+      tensile-strength = 300 MPa (铸态，脆性断裂)
+      fracture-toughness = 10 MPa·√m (极脆)
+      thermal-conductivity = 35 W/(m·K)
+      luster = 金属光泽，色偏银白，抛光后近镜面
+      color = 银白偏黄，与低锡青铜色差明显
+    </properties>
+  </variant>
+
+  <variant id="material._metal.bronze-al" name="Aluminium Bronze (Cu-10Al)" zh="铝青铜 (Cu-10Al)">
+    <summary>
+      铝青铜含铝约 10%，强度远超锡青铜，接近低碳钢水平，
+      同时耐海水腐蚀、不产生火花，广泛用于船舶、石油和防爆工具。
+      现代 HEMA（历史欧洲武术）训练剑常用铝青铜制作。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 4.5 Mohs (≈170-220 HB)
+      density = 7.6 g/cm³
+      melting-point = 1040 °C
+      youngs-modulus = 120 GPa
+      tensile-strength = 650 MPa
+      fracture-toughness = 60 MPa·√m
+      thermal-conductivity = 55 W/(m·K)
+      luster = 金属光泽，色泽偏金黄，比锡青铜更亮
+      color = 亮金黄色，耐蚀性好不易变色
+    </properties>
+  </variant>
+
+  <!-- ═══ 钛 ════════════════════════════════════════════════════════════ -->
+
+  <variant id="material._metal.titanium" name="Commercially Pure Titanium (Grade 2)" zh="纯钛 (Grade 2)">
+    <summary>
+      工业纯钛，密度仅钢的 57%，耐腐蚀性极强（海水、酸碱均免疫），
+      但强度不及钢，且弹性模量低导致刚性不足。
+      常用于航空、医疗植入物和化工设备，偶见于高端 EDC 刀具框架。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 6 Mohs (≈80 HRB)
+      density = 4.51 g/cm³
+      melting-point = 1668 °C
+      youngs-modulus = 105 GPa
+      tensile-strength = 450 MPa
+      fracture-toughness = 65 MPa·√m
+      thermal-conductivity = 17 W/(m·K)
+      luster = 金属光泽，银灰色偏暗，阳极氧化后可呈各种颜色
+      color = 银灰色
+    </properties>
+  </variant>
+
+  <variant id="material._metal.ti-6al-4v" name="Ti-6Al-4V (Grade 5)" zh="TC4 钛合金 (Ti-6Al-4V)">
+    <summary>
+      最常见的钛合金，含铝 6%、钒 4%，占全球钛合金用量过半。
+      强度接近中碳钢而重量仅其 57%，比强度极高，耐蚀耐热。
+      航空发动机叶片、飞机结构件和高端假肢的标准材料。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 6.5 Mohs (≈36 HRC)
+      density = 4.43 g/cm³
+      melting-point = 1660 °C
+      youngs-modulus = 114 GPa
+      tensile-strength = 950 MPa
+      fracture-toughness = 75 MPa·√m
+      thermal-conductivity = 7.2 W/(m·K)
+      luster = 金属光泽，银灰色，抛光后亮度高于纯钛
+      color = 银灰色
+    </properties>
+  </variant>
+
+  <!-- ═══ 铝 ════════════════════════════════════════════════════════════ -->
+
+  <variant id="material._metal.aluminium" name="Pure Aluminium (1050)" zh="纯铝 (1050)">
+    <summary>
+      纯铝极轻极软，导电导热性仅次于铜，耐蚀性好（氧化膜自保护）。
+      强度太低不适合结构用途，主要用于导体、箔材和反射面。
+      作为参照：这是"轻但完全没有强度"的极端。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 2.5 Mohs (≈20-30 HB)
+      density = 2.7 g/cm³
+      melting-point = 660 °C
+      youngs-modulus = 69 GPa
+      tensile-strength = 110 MPa
+      fracture-toughness = 30 MPa·√m
+      thermal-conductivity = 235 W/(m·K)
+      luster = 高反射金属光泽，镜面抛光后反射率达 90%+
+      color = 银白色
+    </properties>
+  </variant>
+
+  <variant id="material._metal.al-7075" name="7075-T6 Aluminium Alloy" zh="7075-T6 铝合金">
+    <summary>
+      7075 是最强的常规铝合金，含锌 5.6%、镁 2.5%、铜 1.6%，
+      T6 时效处理后强度接近低碳钢，而密度不到钢的三分之一。
+      航空蒙皮、攀岩锁扣和高端自行车架的经典选材。
+      代价是耐蚀性差于纯铝，且疲劳性能不如钛合金。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 5.5 Mohs (≈87 HRB)
+      density = 2.81 g/cm³
+      melting-point = 635 °C
+      youngs-modulus = 72 GPa
+      tensile-strength = 570 MPa
+      fracture-toughness = 29 MPa·√m
+      thermal-conductivity = 130 W/(m·K)
+      luster = 金属光泽，银白色，阳极氧化后可着色
+      color = 银白色
+    </properties>
+  </variant>
+
+  <variant id="material._metal.al-6061" name="6061-T6 Aluminium Alloy" zh="6061-T6 铝合金">
+    <summary>
+      6061 是最通用的结构铝合金，含镁 1%、硅 0.6%，
+      强度不如 7075 但焊接性和耐蚀性更好，加工成本低。
+      自行车车架、船舶结构、建筑型材和 DIY 加工的首选铝材。
+    </summary>
+
+    <properties group="material.properties.physical" style="ini">
+      hardness = 5 Mohs (≈60 HRB)
+      density = 2.7 g/cm³
+      melting-point = 650 °C
+      youngs-modulus = 69 GPa
+      tensile-strength = 310 MPa
+      fracture-toughness = 27 MPa·√m
+      thermal-conductivity = 167 W/(m·K)
+      luster = 金属光泽，银白色
+      color = 银白色
+    </properties>
+  </variant>
+</material>

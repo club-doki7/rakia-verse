@@ -1,0 +1,12 @@
+[project]
+name = "rakia-verse-scripts"
+version = "0.1.0"
+description = "Maintaining scripts for the Rakia Verse project."
+readme = "scripts.xml"
+requires-python = ">=3.13"
+dependencies = [
+    "moderngl>=5.12.0",
+    "opencv-contrib-python>=5.0.0.93",
+    "pillow>=12.3.0",
+    "pygame-ce>=2.5.7",
+]

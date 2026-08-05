@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<writing-systems>
+  <writing-system id="elvish-classical" name="Classical Elvish" zh="古典精灵语书写系统">
+    由精灵在约 3000BK 发明的泛用书写系统。
+    字母表包括 24 个字母，不严格区分元音和辅音，自左向右、自上向下书写。
+  </writing-system>
+
+  <writing-system id="human-symbolic" name="Primordial Human Symbolic" zh="原初人类象形书写系统" superseded="superseded">
+    人类最早的书写系统，起源于远古时期人类对自然万物的直接描摹。
+    以刻划或涂绘的方式将事物的轮廓简化为符号，记录于骨片、龟甲、石壁和陶器之上。
+    每个符号直接描绘其所指代的事物，尚未经历抽象化，图形与含义之间的关系一目了然。
+    没有固定的书写方向，符号排列随载体形状而定。
+  </writing-system>
+
+  <writing-system id="runeic" name="Runeic" zh="符文书写系统">
+    穹苍世界最古老的书写系统，由龙裔带来。
+    字母表包含 22 个符文，通常自右向左、自上向下书写。
+
+    这套书写系统在历史上经历过一次明显的分叉：
+    在约 1300BK 时，一队矮人在龙裔曾经生活的山洞中发现了这种符文。
+    然后他们只是学习了符文的形状，而没有理解其含义，并自创了一套完全不同的语言。
+  </writing-system>
+
+  <writing-system id="commonlish" name="Commonlish" zh="通用语书写系统"
+                  parents="human-symbolic,elvish-classical,runeic">
+    穹苍世界当前使用最广泛的书写系统。
+    25BK 时，人类的第一位帝王计划统一人类的语言文字，
+    因此委托学者借鉴精灵的书写系统，创造了这套书写系统，
+    在此过程中部分矮人也参与了设计，并向其中加入了三个字母，用于可能的矮人语书写。
+    随后的 25 年里，这套系统随着语言被输出到各个人类城邦，最终在 1KC 正式成为人类的官方书写系统。
+    字母表包括 30 个字母，严格区分元音和辅音，自左向右、自上向下书写。
+    这个书写系统泛用性相当强，不仅可以用来书写人类语言，还可以用来书写矮人语和精灵语。
+  </writing-system>
+
+  <writing-system id="ideographic" name="Eastern Ideographic" zh="东部表意书写系统" parents="human-symbolic">
+    东部人类独立发展出的书写系统，不依赖字母表，而是以单独的表意符号记录语义。
+    每个符号对应一个词素或概念，符号之间可以组合以表达更复杂的含义。
+    其最初的符号来自对自然事物的描摹，后逐渐抽象化、规范化。
+    符号总量庞大，常用者约三千余，完整体系则超过万数。
+  </writing-system>
+
+  <writing-system id="orkish-symbolic" name="Orkish Symbolic" zh="兽人象形书写系统" parents="human-symbolic">
+    一种完全的象形书写系统，相比文字更类似于画图。
+    没有固定的字母表和书写方向，也没有固定的发音规则。
+  </writing-system>
+
+  <writing-system id="naqsh" name="Naqsh" zh="电刻文">
+    珂拉墨使用的书写系统。
+    珂拉墨利用强化的生物电在硬质表面（石板、巨型贝壳、珊瑚骨骼）上刻下微细的凹凸纹路。
+    这些纹路编码了电触语的信号结构，信息以连续的电位模式编码，没有固定的字母表。
+    其他珂拉墨可以用腕足吸盘读取纹路中的电位差信息，在自己的神经系统中重建原始信息。
+    对非墨裔而言，电刻文看起来只是表面上复杂而精美的几何纹理，完全无法解读其内容。
+  </writing-system>
+</writing-systems>

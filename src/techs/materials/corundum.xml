@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material id="material.corundum" name="Corundum" zh="刚玉">
+  <summary>
+    刚玉是一种坚硬的矿物，具有优异的耐磨性和高温稳定性。
+    它常用于制造切削工具、耐火材料以及宝石。
+  </summary>
+
+  <properties group="material.properties.physical" style="ini">
+    hardness = 9 Mohs
+    density = 3.98 g/cm³
+    melting-point = 2050 °C
+    youngs-modulus = 470 GPa
+    tensile-strength = 400 MPa
+    fracture-toughness = 3.5 MPa·√m
+    thermal-conductivity = 35 W/(m·K)
+    luster = 玻璃质至金刚光泽，透明至半透明
+    color = 纯品无色透明，杂质可使其呈现不同颜色
+  </properties>
+</material>

@@ -1,0 +1,24 @@
+{
+    "editor.rulers": [
+        80, 100
+    ],
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "files.eol": "\n",
+    "editor.trimAutoWhitespace": true,
+    "json.schemaDownload.trustedDomains": {
+        "https://opencode.ai": true
+    },
+    "chat.byokUtilityModelDefault": "copilot",
+    "files.trimTrailingWhitespace": true,
+    "python.analysis.typeCheckingMode": "standard",
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.languageServerMode": "full",
+    "workbench.editorAssociations": {
+        "*.maped": "hexEditor.hexedit"
+    }
+}
