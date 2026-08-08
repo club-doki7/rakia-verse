@@ -99,6 +99,7 @@
     <xi:include href="src/monsters/fish-men.xml" comment="鱼人" />
     <xi:include href="src/monsters/ogre.xml" comment="食人魔" />
     <xi:include href="src/monsters/kraken.xml" comment="巨型克拉肯" />
+    <xi:include href="src/monsters/mimicker.xml" comment="拟形怪" />
 
     <!-- 虽然禁止死人复活，但总有人跃跃欲试 -->
     <xi:include href="src/monsters/zombie.xml" comment="活尸" />
