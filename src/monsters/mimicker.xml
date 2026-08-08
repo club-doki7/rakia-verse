@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster id="monster.mimicker" name="Mimicker" zh="拟形怪"
-         xml:lang="zh_CN" xmlns:xi="http://www.w3.org/2001/XInclude">
-
+<monster id="monster.mimicker" name="Mimicker" zh="拟形怪">
   <summary>
     拟形怪是一种由胶质组织构成的变形捕食者，能将整个身体重塑为其他生物的外形。
     成年个体拥有足够的体积拟态出一头牛或一匹马大小的动物，
