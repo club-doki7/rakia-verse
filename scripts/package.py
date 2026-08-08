@@ -84,21 +84,21 @@ def resolve_xincludes(element: ET.Element, base_dir: str, visited: set[str] | No
     for i, include_elem in reversed(includes_to_resolve):
         href = include_elem.get("href")
         if href is None:
-            print(f"  警告: 发现缺少 href 属性的 xi:include 元素，已跳过")
-            continue
+            print(f"  错误: 发现缺少 href 属性的 xi:include 元素")
+            exit(1)
 
         # 解析文件路径
         include_path = os.path.normpath(os.path.join(base_dir, href))
 
         if not os.path.isfile(include_path):
-            print(f"  警告: 引用文件不存在: {include_path}，已跳过")
-            continue
+            print(f"  错误: 引用文件不存在: {include_path}")
+            exit(1)
 
         # 检测循环引用
         abs_path = os.path.abspath(include_path)
         if abs_path in visited:
-            print(f"  警告: 检测到循环引用: {include_path}，已跳过")
-            continue
+            print(f"  错误: 检测到循环引用: {include_path}")
+            exit(1)
 
         # 获取 comment 属性（如果有的话，作为注释保留）
         comment = include_elem.get("comment")
@@ -109,10 +109,10 @@ def resolve_xincludes(element: ET.Element, base_dir: str, visited: set[str] | No
             included_root = included_tree.getroot()
         except ET.ParseError as e:
             print(f"  错误: 解析文件失败 {include_path}: {e}")
-            continue
+            exit(1)
         except Exception as e:
             print(f"  错误: 读取文件失败 {include_path}: {e}")
-            continue
+            exit(1)
 
         # 递归解析被引用文件中的 xi:include
         new_visited = visited | {abs_path}

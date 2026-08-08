@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sihr id="sihr.runeic" name="Runeic Magic" zh="符文魔术">
+<magecraft id="magecraft.runeic" name="Runeic Magic" zh="符文魔术">
   <summary>
     符文魔术是一种通过特定的符文来操纵世界的魔术。
     不同于奥术魔术中人造的助记符，符文 (rune) 本身就是力量的管道，
@@ -42,7 +42,7 @@
     这使得符文魔术在安全性上远优于奥术魔术（后者的失败可能产生危险的副作用）。
   </spellcast>
 
-  <variant id="sihr.runeic.ilm-simiya" name="Ilm al-Simiya" zh="神圣符号学">
+  <variant id="magecraft.runeic.ilm-simiya" name="Ilm al-Simiya" zh="神圣符号学">
     <summary>
       神圣符号学是艾尔法拉赐予早期先知的符文魔术体系。
       其符号源自一种神圣语言，
@@ -104,7 +104,7 @@
     </items>
   </variant>
 
-  <variant id="sihr.runeic.draconic" name="Draconic Runeic Magic" zh="龙裔符文魔术">
+  <variant id="magecraft.runeic.draconic" name="Draconic Runeic Magic" zh="龙裔符文魔术">
     <summary>
       龙裔符文魔术是由艾尔法拉直接教授给龙裔的符文体系。
       龙语本身就是一种魔术：龙裔在说话和书写时，天然地在与世界进行某种程度的交互。
@@ -152,10 +152,10 @@
     </items>
   </variant>
 
-  <variant id="sihr.runeic.dwarven" name="Dwarven Runeic Magic" zh="矮人符文魔术">
+  <variant id="magecraft.runeic.dwarven" name="Dwarven Runeic Magic" zh="矮人符文魔术">
     <summary>
       矮人符文魔术是矮人在龙裔符文魔术的基础上加以“创造性诠释”的成果。
-      约 1300BK 时，一队矮人在龙裔曾经生活的山洞中发现了刻满符文的石壁。
+      约 1500BK 时，一队矮人在龙裔曾经生活的山洞中发现了刻满符文的石壁。
       他们学习了这些符文的形状，却没有理解龙语中这些符号的本意。
       矮人凭借自己的逻辑和实验，为每个符号赋予了完全不同的含义和用法。
 
@@ -266,4 +266,4 @@
     - 龙裔符文最全面、最自然，但仅限龙裔能完整发挥
     - 矮人符文最实用、最工程化，但在抽象领域有本质缺陷
   </comparison>
-</sihr>
+</magecraft>

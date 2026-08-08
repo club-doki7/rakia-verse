@@ -42,12 +42,12 @@
     <summary>
       A script to convert dates between the Kingdom Calendar (KC/BK, 360 days per year,
       15 months of 24 days) and the Hijri Calendar (AH/BH, 343 days per year, 7 months
-      of 49 days). The epoch anchor is 0001-01-01AH = 1232-08-23BK. Neither calendar
+      of 49 days). The epoch anchor is 0001-01-01AH = 1372-08-23BK. Neither calendar
       has a year 0.
     </summary>
     <usage>
       python projectdir/scripts/calendar_convert.py [date ...]
-      [date] can be a full date like "1232-08-23BK" or "0001-01-01AH" for exact
+      [date] can be a full date like "1372-08-23BK" or "0001-01-01AH" for exact
       conversion, or a bare year like "618BK" to get the corresponding year range.
       Multiple dates can be given at once.
 
@@ -55,7 +55,7 @@
       one date per line ("q" to quit).
     </usage>
     <example>
-      python projectdir/scripts/calendar_convert.py 1232-08-23BK
+      python projectdir/scripts/calendar_convert.py 1372-08-23BK
       python projectdir/scripts/calendar_convert.py 618BK 0325KC
       python projectdir/scripts/calendar_convert.py
     </example>
@@ -71,6 +71,28 @@
     </usage>
     <example>
       python projectdir/scripts/scale_maps.py
+    </example>
+  </script>
+
+  <script id="script.hex-distance" href="hex_distance.py">
+    <summary>
+      A script to calculate the distance between two hexagonal grid cells in an odd-r offset
+      coordinate system (pointy-top orientation). The script outputs both grid distance and
+      actual physical distance in kilometers based on the hex side length (default 40km,
+      yielding a center-to-center spacing of ~69.28km).
+    </summary>
+    <usage>
+      python projectdir/scripts/hex_distance.py col1 row1 col2 row2 [-s HEX_SIDE] [-v]
+
+      col1, row1: The column and row coordinates of the first cell.
+      col2, row2: The column and row coordinates of the second cell.
+      -s, --hex-side: The side length of the hexagon in kilometers (default: 40).
+      -v, --verbose: Display detailed information including cube coordinates.
+    </usage>
+    <example>
+      python projectdir/scripts/hex_distance.py 0 0 3 2
+      python projectdir/scripts/hex_distance.py 0 0 3 2 -v
+      python projectdir/scripts/hex_distance.py 0 0 1 0 -s 20
     </example>
   </script>
 </scripts>

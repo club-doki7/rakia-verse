@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-51.5 -51.5 103 103">
+  <path d="M -25,-25
+           A 25,25 0 0,1 25,-25
+           A 25,25 0 0,1 25,25
+           A 25,25 0 0,1 -25,25
+           A 25,25 0 0,1 -25,-25 Z"
+        fill="white" stroke="#da0" stroke-width="3"/>
+</svg>

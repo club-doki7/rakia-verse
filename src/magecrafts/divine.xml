@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sihr id="sihr.divine" name="Divine Sihr" zh="神术魔术">
+<magecraft id="magecraft.divine" name="Divine Magecraft" zh="神术魔术">
   <summary>
     神术魔术来自与某些强大存在的契约。可以赐予神术的存在包括：
     - 至高者艾尔法拉
@@ -61,4 +61,4 @@
     空间扭曲、深渊召唤、精神侵蚀、现实裂隙、感知超载、时间感错乱。
     这些能力的效果有时连施法者自己都无法预测。
   </contractor>
-</sihr>
+</magecraft>

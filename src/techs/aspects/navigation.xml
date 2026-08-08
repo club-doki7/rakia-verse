@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tech id="tech.navigation" name="Navigation" zh="导航">
   <mech id="tech.navigation.maknet-compass" name="Maknet Compass Navigation"
-        zh="玼罗盘导航" since="1175BK">
+        zh="玼罗盘导航" since="1315BK">
   </mech>
 
-  <mech id="tech.navigation.natural-sihr.elvish" name="Elvish Natural Sihr Navigation"
+  <mech id="tech.navigation.natural-magecraft.elvish" name="Elvish Natural Magecraft Navigation"
         zh="精灵自然魔术导航" since="~2800BK">
   </mech>
 
-  <mech id="tech.navigation.natural-sihr.lithkin" name="Lithkin Natural Sihr Navigation"
+  <mech id="tech.navigation.natural-magecraft.lithkin" name="Lithkin Natural Magecraft Navigation"
         zh="石裔自然魔术导航" since="~2800BK">
   </mech>
 
   <mech id="tech.navigation.gyro-inertial" name="Gyro-Inertial Navigation"
-        zh="陀螺仪惯性导航" since="~1200BK">
+        zh="陀螺仪惯性导航" since="~1300BK">
   </mech>
 </tech>

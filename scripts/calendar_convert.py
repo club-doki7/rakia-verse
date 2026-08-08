@@ -4,10 +4,10 @@
 历法设定：
 - 王国历一年 360 天，15 月 × 24 天；纪元前用 BK，纪元后用 KC，无 0 年。
 - 迁徙历一年 343 天，7 月 × 49 天；纪元后用 AH，纪元前（外推）用 BH，无 0 年。
-- 锚点：0001-01-01AH = 1232-08-23BK。
+- 锚点：0001-01-01AH = 1372-08-23BK。
 
 用法：
-  python calendar_convert.py 1232-08-23BK   # 精确日期转换
+  python calendar_convert.py 1372-08-23BK   # 精确日期转换
   python calendar_convert.py 618BK          # 仅年份，输出对应年份范围
   python calendar_convert.py               # 无参数进入 stdio 交互模式
 """
@@ -27,7 +27,7 @@ AH_MONTH_DAYS = 49
 AH_MONTHS = 7
 
 # 0001-01-01AH 对应的王国历绝对天数（以 0001-01-01KC 为第 0 天）
-AH_EPOCH_ABS = -1232 * KC_YEAR_DAYS + (8 - 1) * KC_MONTH_DAYS + (23 - 1)
+AH_EPOCH_ABS = -1372 * KC_YEAR_DAYS + (8 - 1) * KC_MONTH_DAYS + (23 - 1)
 
 KINGDOM_ERAS = ("KC", "BK")
 HIJRI_ERAS = ("AH", "BH")
@@ -59,7 +59,7 @@ def parse(text: str) -> tuple[str, int, int | None, int | None]:
     m = DATE_RE.match(text.strip())
     if not m:
         raise ValueError(
-            f"无法解析：{text!r}（示例：1232-08-23BK、0001-01-01AH、618BK）"
+            f"无法解析：{text!r}（示例：1372-08-23BK、0001-01-01AH、618BK）"
         )
     year_s, month_s, day_s, era = m.groups()
     era = era.upper()
@@ -127,7 +127,7 @@ def convert(text: str) -> str:
 def interactive() -> None:
     is_tty = sys.stdin.isatty()
     if is_tty:
-        print("历法转换（王国历 <-> 迁徙历）。输入日期，如 1232-08-23BK 或 618BK；q 退出。")
+        print("历法转换（王国历 <-> 迁徙历）。输入日期，如 1372-08-23BK 或 618BK；q 退出。")
     while True:
         try:
             line = input("> " if is_tty else "")

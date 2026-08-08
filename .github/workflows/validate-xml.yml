@@ -1,0 +1,33 @@
+name: Validate XML
+
+on:
+  push:
+    paths:
+      - '**.xml'
+      - '**.adoc'
+      - 'scripts/check_xml.py'
+      - 'scripts/package.py'
+  pull_request:
+    paths:
+      - '**.xml'
+      - '**.adoc'
+      - 'scripts/check_xml.py'
+      - 'scripts/package.py'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Check XML format
+        run: python scripts/check_xml.py
+
+      - name: Package (no-emit)
+        run: python scripts/package.py --no-emit

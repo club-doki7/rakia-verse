@@ -3,5 +3,9 @@
     "redhat.vscode-xml",
     "asciidoctor.asciidoctor-vscode",
     "ms-vscode.hexeditor"
+  ],
+  "unwantedRecommendations": [
+    "ms-python.debugpy",
+    "ms-python.vscode-python-envs"
   ]
 }

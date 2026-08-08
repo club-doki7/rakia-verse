@@ -5,3 +5,6 @@ dist.xml
 _sessions
 
 src/maps/map-*-1.5x.png
+tools/rakv8086/dosbox_c/*
+!tools/rakv8086/dosbox_c/.gitkeep
+tools/rakv8086/build.sh

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sihr id="sihr.arcane" name="Arcane Sihr" zh="奥术魔术">
+<magecraft id="magecraft.arcane" name="Arcane Magecraft" zh="奥术魔术">
   <summary>
     奥术魔术是一种复杂的工程学技能，纯粹靠学习即可掌握，智力更高者通常学习速度更快。
 
@@ -60,4 +60,4 @@
     尽管如此，与之相关的尝试，特别是与永生与复活相关的尝试，千百年来一直在进行。
     最成功的尝试即铸神者，目前尚未有铸神者“寿命结束、自然死亡”的记录。
   </limitation>
-</sihr>
+</magecraft>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 200">
+  <!-- 友军：红色正菱形（正方形旋转45°） -->
+  <g transform="translate(75,100)">
+    <polygon points="0,-60 60,0 0,60 -60,0" fill="none" stroke="#c00" stroke-width="3"/>
+    <text y="90" text-anchor="middle" font-size="14" font-family="sans-serif">友军 (Friendly)</text>
+  </g>
+
+  <!-- 敌军：蓝色正方形 -->
+  <g transform="translate(225,100)">
+    <rect x="-45" y="-45" width="90" height="90" fill="none" stroke="#06c" stroke-width="3"/>
+    <text y="90" text-anchor="middle" font-size="14" font-family="sans-serif">敌军 (Hostile)</text>
+  </g>
+
+  <!-- 非军事：绿色矩形 -->
+  <g transform="translate(375,100)">
+    <rect x="-60" y="-45" width="120" height="90" fill="none" stroke="#090" stroke-width="3"/>
+    <text y="90" text-anchor="middle" font-size="14" font-family="sans-serif">非军事 (Civilian)</text>
+  </g>
+
+  <!-- 中立/不明：黄色四叶草形（标准圆弧外凸） -->
+  <g transform="translate(525,100)">
+    <path d="M -25,-25
+             A 25,25 0 0,1 25,-25
+             A 25,25 0 0,1 25,25
+             A 25,25 0 0,1 -25,25
+             A 25,25 0 0,1 -25,-25 Z"
+          fill="none" stroke="#da0" stroke-width="3"/>
+    <text y="90" text-anchor="middle" font-size="14" font-family="sans-serif">中立 (Neutral)</text>
+  </g>
+</svg>

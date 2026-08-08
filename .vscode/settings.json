@@ -20,5 +20,11 @@
     "python.analysis.languageServerMode": "full",
     "workbench.editorAssociations": {
         "*.maped": "hexEditor.hexedit"
-    }
+    },
+    "chat.agentSkillsLocations": {
+        "~/.agents/skills": false,
+        "~/.copilot/skills": false,
+        "~/.claude/skills": false
+    },
+    "chat.useAgentSkills": false
 }

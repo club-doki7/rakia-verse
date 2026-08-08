@@ -47,7 +47,7 @@
     </property>
   </properties-group>
 
-  <properties-group id="material.properties.sihr">
+  <properties-group id="material.properties.magecraft">
     <property key="conductivity" type="level-i-vii">
       魔力传导性：材料对魔力流通的导通或阻隔能力，
       影响其作为法器材料、魔术物品基底、奥术魔术回路载体、符文载体的适用性。

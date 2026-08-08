@@ -62,7 +62,7 @@
     而人类血统给予的那份不安分，让她永远没法在一个地方待超过半年。
   </biography>
 
-  <component type="sihr.arcane.spellcaster">
+  <component type="magecraft.arcane.spellcaster">
     施展奥术魔术的能力。
 
     阿依莎并未接受过任何正统的魔术训练。她所会的奥术咒文全部来自诗歌——
@@ -80,7 +80,7 @@
     “能用就行，炸了再说。”
   </component>
 
-  <component type="sihr.natural.spellcaster">
+  <component type="magecraft.natural.spellcaster">
     施展自然魔术的能力。
 
     阿依莎的自然魔术首先来自精灵血统的天生直觉——

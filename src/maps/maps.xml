@@ -5,21 +5,41 @@
     <map id="map.terrain" type="terrain" href="map-terrain.png" />
   </group>
 
-  <group id="maps.hexgrid" width="390" height="426" width-px="6750" height-px="6381"
+  <group id="maps.hexgrid" width="426" height="390" width-px="6750" height-px="6381"
          grid-side="40km" grid-diagnal="80km" grid-vertical="69.282032km" pixel="4km">
     <map id="map.geographical-regions" href="geo-regions-390x426.maped">
       <region index="1" id="region.al-nur" name="Shibh Jazīrat al-Nūr" zh="努尔半岛" />
       <region index="2" id="region.sabz" name="Dālān-e Sabz" zh="萨布兹走廊" />
       <region index="3" id="region.aurelia" name="Aurelia" zh="奥雷利亚" />
-      <region index="4" id="region.badkuh" name="Bādkūh" zh="巴德库赫" />
+      <region index="4" id="region.badkuh" name="Bādkūh" zh="巴德库赫山地" />
       <region index="5" id="region.solmaris" name="Solmaris Peninsula" zh="索尔玛里斯半岛" />
       <region index="6" id="region.syahdarya" name="Kanār-e Syāhdaryā" zh="锡亚赫沿岸" />
       <region index="7" id="region.palirroia" name="Palirroia Peninsula" zh="帕里利亚半岛" />
-      <region index="8" id="region.hesperia" name="Hesperia" zh="赫斯珀里亚" />
-      <region index="9" id="region.litoria" name="Litoria" zh="利托里亚" />
+      <region index="8" id="region.hesperia" name="Hesperia Peninsula" zh="赫斯帕里亚半岛" />
+      <region index="9" id="region.litoria" name="Litoria Plain" zh="利托里亚平原" />
       <region index="10" id="region.chlororea" name="Chlororea" zh="克罗瑞亚山地" />
 
       <region index="18" id="region.trisestra" name="Trisestra" zh="三姐妹群岛" />
+
+      <region index="19" id="region.munster" name="Munster" zh="芒斯特小平原" />
+      <region index="21" id="region.ning" name="Ning Peninsula" zh="宁州半岛" />
     </map>
+
+    <map id="map.countries-bk650" href="countries-bk650-390x426.maped">
+    </map>
+
+    <locations>
+      <location id="location.wusulun" name="Wusūlūn" zh="乌苏隆" col="96" row="150" />
+      <location id="location.dar-al-ilm" name="Dar-al-Ilm" zh="达尔·伊尔姆" col="94" row="157" />
+      <location id="location.nabiyyun" name="Nabiyyun" zh="纳比雍" col="80" row="150" />
+      <location id="location.solmun" name="Solmun" zh="索尔穆恩" col="63" row="145" />
+
+      <location id="location.munster" name="Munster" zh="芒斯特" col="118" row="123" />
+
+      <location id="location.ning" name="Ning" zh="宁州" col="129" row="129" />
+
+      <location id="location.milgah" name="Milgah" zh="米尔盖" col="109" row="92" />
+      <location id="location.dwarlven-gate" name="Dwarlven Gate" zh="矮人之门" col="133" row="56" />
+    </locations>
   </group>
 </maps>

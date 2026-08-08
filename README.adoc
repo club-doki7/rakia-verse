@@ -11,7 +11,7 @@ image:misc/fib.svg[本作品包含对以下主题的虚构描写或讨论：战�
 - 正典内容: link:rakia-verse.xml[rakia-verse.xml]
 - 草稿、废案及娱乐向内容：link:src/_/underlined.xml[underlined.xml]
 - 维护脚本：link:scripts/scripts.xml[scripts.xml]
-- *(新, beta)* 地图编辑器: link:maped/README.adoc[maped/README.adoc]
+- *(新, beta)* 地图编辑器: link:tools/maped/README.adoc[tools/maped/README.adoc]
 
 image:src/maps/map-terrain.png[世界地图]
 

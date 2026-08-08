@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sihr id="sihr.natural" name="Natural Sihr" zh="自然魔术">
+<magecraft id="magecraft.natural" name="Natural Magecraft" zh="自然魔术">
   <summary>
     自然魔术是一种难以捉摸的魔术形式，通常与自然界的力量和现象相关联。
     它是后天习得的，但学习过程极为感性、因人而异，很难有标准化的教材或流程。
@@ -8,7 +8,7 @@
     能量来源：未知。
   </summary>
 
-  <variant id="sihr.natural.elf" name="Elvish natural sihr" zh="精灵自然魔术">
+  <variant id="magecraft.natural.elf" name="Elvish natural magecraft" zh="精灵自然魔术">
     <summary>
       精灵自然魔术是对生命力的广泛感知与操控。
       精灵能引导植物生长、加速或延缓生命进程、感知周围生命的气息、与动物建立短暂的沟通，
@@ -71,7 +71,7 @@
     </limitation>
   </variant>
 
-  <variant id="sihr.natural.lithkin" name="Lithkin natural sihr" zh="石裔自然魔术">
+  <variant id="magecraft.natural.lithkin" name="Lithkin natural magecraft" zh="石裔自然魔术">
     <summary>
       石裔自然魔术与精灵的截然不同。精灵的自然魔术以生命力为核心，
       而石裔的自然魔术以地质力量为核心——岩石的塑形与感知、矿物的操控，以及火焰魔术。
@@ -136,4 +136,4 @@
         紧急情况下可以加速，但远不如奥术魔术的即时性。火焰魔术是例外，反应速度与战斗节奏相当。
     </limitation>
   </variant>
-</sihr>
+</magecraft>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tech id="tech.gunpowder" name="Gunpowder" zh="火药">
+  <mech id="tech.gunpowder.black-powder" name="Black Powder" zh="黑火药" since="120BK">
+  </mech>
+
+  <mech id="tech.gunpowder.sugar-saltpeter" name="Sugar Saltpeter" zh="硝糖" since="265KC">
+  </mech>
+
+  <mech id="tech.gunpowder.mercury-fulminate" name="Mercury Fulminate" zh="雷汞" since="540KC">
+  </mech>
+
+  <mech id="tech.gunpowder.ammonium-nitrate" name="Ammonium Nitrate" zh="硝酸铵"
+        since="首次制取 490KC, 实用化 625KC">
+  </mech>
+
+  <mech id="tech.gunpowder.nitrocellulose" name="Nitrocellulose" zh="硝化纤维" since="730KC">
+  </mech>
+</tech>

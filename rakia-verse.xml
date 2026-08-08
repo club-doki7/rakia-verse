@@ -42,7 +42,7 @@
 
     <!-- 感谢伊玛目安萨里开源 -->
 
-    魔术和神迹的本质，即是艾尔法拉允许或选择在特定条件下，以异于习惯的方式创造事件。
+    魔术无非是艾尔法拉的另一种习惯；而神迹即是艾尔法拉选择在特定条件下，以异于习惯的方式创造事件。
     因此，魔术和神迹并不“违反”自然法则，因为根本不存在独立于创造者的法则。
 
     <!-- 譬如，如果真主意欲，祂就可以让易卜拉欣被投入火中而不燃烧 -->
@@ -115,13 +115,13 @@
   </civils>
 
   <!-- 魔术：超自然现象 -->
-  <sihrs>
-    <xi:include href="src/sihrs/summary.xml" />
-    <xi:include href="src/sihrs/arcane.xml" comment="奥术魔术" />
-    <xi:include href="src/sihrs/runeic.xml" comment="符文魔术" />
-    <xi:include href="src/sihrs/divine.xml" comment="神术魔术" />
-    <xi:include href="src/sihrs/natural.xml" comment="自然魔术" />
-  </sihrs>
+  <magecrafts>
+    <xi:include href="src/magecrafts/summary.xml" />
+    <xi:include href="src/magecrafts/arcane.xml" comment="奥术魔术" />
+    <xi:include href="src/magecrafts/runeic.xml" comment="符文魔术" />
+    <xi:include href="src/magecrafts/divine.xml" comment="神术魔术" />
+    <xi:include href="src/magecrafts/natural.xml" comment="自然魔术" />
+  </magecrafts>
 
   <!-- 信仰 -->
   <faiths>
@@ -153,11 +153,12 @@
       <xi:include href="src/history/bio_chi_fangning.xml" comment="姬怀远世家" />
     </biographies>
 
-    <!-- 纪事本末体 / 经文 / 秘史-->
+    <!-- 纪事本末体 / 经文 / 蒙古秘史 -->
     <events>
-      <xi:include href="src/history/event_bk1692_creation.xml" comment="造人" />
-      <xi:include href="src/history/event_bk1238_hijrah.xml" comment="迁徙" />
+      <xi:include href="src/history/event_bk1892_creation.xml" comment="造人" />
+      <xi:include href="src/history/event_bk1378_hijrah.xml" comment="迁徙" />
       <xi:include href="src/history/event_bk0642_battle_of_ashfang_peak.xml" comment="灰牙峰之战" />
+      <xi:include href="src/history/event_bk0618_solmun_seige.xml" comment="索尔穆恩围城战" />
       <xi:include href="src/history/event_kc0325_catastrophe.xml" comment="索尔穆恩之殇" />
     </events>
   </history>
