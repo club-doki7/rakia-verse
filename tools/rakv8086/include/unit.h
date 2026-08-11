@@ -18,7 +18,10 @@ typedef enum damage_kinds {
   DMG_IMPACT = 2,
   DMG_FIRE = 3,
   DMG_COLD = 4,
-  DMG_MAGIC = 5
+  DMG_ELECTRIC = 5,
+  DMG_ACID = 6,
+  DMG_POISON = 7,
+  DMG_FORCE = 8,
 } damage_kinds;
 
 typedef struct attack_base {
@@ -42,6 +45,9 @@ typedef struct unit_template {
   unsigned short id;
   unsigned short level;
   unsigned short max_hp;
+  unsigned char defence[16];
+  unsigned char resist[9];
+
   unsigned char name[16];
   unsigned short advance_to[3];
   unsigned char n_attacks;
