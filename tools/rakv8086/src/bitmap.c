@@ -31,17 +31,16 @@ bitmap *load_bmp(const char *path) {
   }
 
   if (bpp == 1) {
-    /* 1-bit: pack 8 pixels per byte, rows aligned to byte boundary */
     row_stride = (width + 7) / 8;
-    pixel_size = (unsigned long)row_stride * height;
-  } else if (bpp == 16) {
-    /* RGB565: 2 bytes per pixel */
-    row_stride = width * 2;
-    pixel_size = (unsigned long)row_stride * height;
+  } else if (bpp == 4) {
+    row_stride = (width + 1) / 2;
+  } else if (bpp == 8 || bpp == 16 || bpp == 24 || bpp == 32) {
+    row_stride = width * (bpp / 8);
   } else {
     fclose(f);
     return NULL;
   }
+  pixel_size = (unsigned long)row_stride * height;
 
   bm = malloc(sizeof(bitmap) + pixel_size);
   if (!bm) {
@@ -51,7 +50,7 @@ bitmap *load_bmp(const char *path) {
 
   bm->width  = (unsigned short)width;
   bm->height = (unsigned short)height;
-  bm->rgb565 = (bpp == 16) ? 1 : 0;
+  bm->bpp    = (unsigned char)bpp;
 
   /* BMP rows are padded to 4 bytes and stored bottom-up */
   {
