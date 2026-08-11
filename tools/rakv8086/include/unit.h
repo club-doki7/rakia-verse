@@ -58,7 +58,13 @@ typedef struct unit {
   unit_template *template;
   unsigned short level;
   unsigned short max_hp;
+  unsigned char defence[16];
+  unsigned char resist[9];
+
   unsigned short hp;
+  unsigned short x;
+  unsigned short y;
+
   attack *attacks;
 
   unsigned char name[16];
