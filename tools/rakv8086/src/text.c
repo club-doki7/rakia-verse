@@ -11,12 +11,12 @@
 #define CN_CHAR_W 16
 #define CN_CHAR_H 16
 
-static text_buf *tb = NULL;
+static txt_buf *tb = NULL;
 
 static void load_ascii(asc_buf *asc);
 static cn_buf *load_cn_file(const char *path);
 
-text_buf *text_init(void) {
+txt_buf *text_init(void) {
   cn_buf *cn_files[MAX_CN_FILES];
   int cn_count = 0;
   int i;
@@ -30,7 +30,7 @@ text_buf *text_init(void) {
     cn_count++;
   }
 
-  tb = malloc(sizeof(text_buf) + (unsigned long)cn_count * sizeof(cn_buf *));
+  tb = malloc(sizeof(txt_buf) + (unsigned long)cn_count * sizeof(cn_buf *));
   if (!tb)
     return NULL;
 

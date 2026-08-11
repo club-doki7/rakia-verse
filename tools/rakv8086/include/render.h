@@ -14,7 +14,7 @@ void svga_restore_text(void);
 void svga_flush(svga_buffer const* buf);
 
 void svga_draw_text(svga_buffer *buf,
-                    text_buf const* txt_buf,
+                    txt_buf const* txt_buf,
                     unsigned short x,
                     unsigned short y,
                     unsigned char const *text);

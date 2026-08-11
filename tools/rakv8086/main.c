@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
   }
 
   {
-    text_buf *tb = text_init();
+    txt_buf *tb = text_init();
     /* \f sets fg, \v sets bg; \x80\x00~\x80\x02 = cn_bufs[0] chars 0-2 */
     static const unsigned char msg[] =
       "\f\xFF"           /* fg = white */
