@@ -101,4 +101,3 @@ static cn_buf *load_cn_file(const char *path) {
   free(bm);
   return cn;
 }
-
