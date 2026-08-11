@@ -43,8 +43,9 @@ typedef struct attack {
 
 typedef struct unit_template {
   unsigned short id;
-  unsigned short level;
+  unsigned short xp;
   unsigned short max_hp;
+  unsigned char level;
   unsigned char defence[16];
   unsigned char resist[9];
 
@@ -56,16 +57,17 @@ typedef struct unit_template {
 
 typedef struct unit {
   unit_template *template;
-  unsigned short level;
+  attack *attacks;
+
   unsigned short max_hp;
+  unsigned char level;
   unsigned char defence[16];
   unsigned char resist[9];
 
   unsigned short hp;
+  unsigned short xp;
   unsigned short x;
   unsigned short y;
-
-  attack *attacks;
 
   unsigned char name[16];
 } unit;
