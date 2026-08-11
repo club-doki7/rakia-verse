@@ -57,94 +57,11 @@ static VESA_INFO vesa_info;
 static MODE_INFO mode_info;
 static int current_bank = -1;
 
-static int get_vesa_info(void) {
-  __dpmi_regs r;
-  long dosbuf = __tb & 0xFFFFF;
-
-  dosmemput("VBE2", 4, dosbuf);
-
-  r.x.ax = 0x4F00;
-  r.x.di = dosbuf & 0xF;
-  r.x.es = (dosbuf >> 4) & 0xFFFF;
-  __dpmi_int(0x10, &r);
-
-  if (r.h.ah)
-    return -1;
-
-  dosmemget(dosbuf, sizeof(VESA_INFO), &vesa_info);
-
-  if (strncmp(vesa_info.VESASignature, "VESA", 4) != 0)
-    return -1;
-
-  return 0;
-}
-
-static int get_mode_info(int mode) {
-  __dpmi_regs r;
-  long dosbuf = __tb & 0xFFFFF;
-
-  r.x.ax = 0x4F01;
-  r.x.cx = mode;
-  r.x.di = dosbuf & 0xF;
-  r.x.es = (dosbuf >> 4) & 0xFFFF;
-  __dpmi_int(0x10, &r);
-
-  if (r.h.ah)
-    return -1;
-
-  dosmemget(dosbuf, sizeof(MODE_INFO), &mode_info);
-  return 0;
-}
-
-/* Find 800x600 8bpp mode by enumerating the mode list */
-static int find_vesa_mode(void) {
-  unsigned long mode_ptr;
-  unsigned short seg, off;
-  unsigned short mode;
-  long list_addr;
-
-  mode_ptr = vesa_info.VideoModePtr;
-  seg = (mode_ptr >> 16) & 0xFFFF;
-  off = mode_ptr & 0xFFFF;
-  list_addr = (long)seg * 16 + off;
-
-  for (;;) {
-    mode = _farpeekw(_dos_ds, list_addr);
-    if (mode == 0xFFFF)
-      break;
-    list_addr += 2;
-
-    if (get_mode_info(mode) != 0)
-      continue;
-    if (mode_info.XResolution == 800 &&
-        mode_info.YResolution == 600 &&
-        mode_info.BitsPerPixel == 8)
-      return mode;
-  }
-
-  return -1;
-}
-
-static void set_vesa_bank(int bank) {
-  __dpmi_regs r;
-  if (bank == current_bank)
-    return;
-  current_bank = bank;
-  r.x.ax = 0x4F05;
-  r.x.bx = 0;
-  r.x.dx = bank;
-  __dpmi_int(0x10, &r);
-}
-
-static void set_rgb332_palette(void) {
-  int i;
-  for (i = 0; i < 256; i++) {
-    outportb(0x3C8, i);
-    outportb(0x3C9, ((i >> 5) & 7) * 9);
-    outportb(0x3C9, ((i >> 2) & 7) * 9);
-    outportb(0x3C9, (i & 3) * 21);
-  }
-}
+static int get_vesa_info(void);
+static int get_mode_info(int mode);
+static int find_vesa_mode(void);
+static void set_vesa_bank(int bank);
+static void set_rgb332_palette(void);
 
 int svga_init(void) {
   __dpmi_regs r;
@@ -273,5 +190,95 @@ void svga_flush(const svga_buffer *buf) {
     offset += chunk;
     remaining -= chunk;
     bank += winsize / gran;
+  }
+}
+
+
+static int get_vesa_info(void) {
+  __dpmi_regs r;
+  long dosbuf = __tb & 0xFFFFF;
+
+  dosmemput("VBE2", 4, dosbuf);
+
+  r.x.ax = 0x4F00;
+  r.x.di = dosbuf & 0xF;
+  r.x.es = (dosbuf >> 4) & 0xFFFF;
+  __dpmi_int(0x10, &r);
+
+  if (r.h.ah)
+    return -1;
+
+  dosmemget(dosbuf, sizeof(VESA_INFO), &vesa_info);
+
+  if (strncmp(vesa_info.VESASignature, "VESA", 4) != 0)
+    return -1;
+
+  return 0;
+}
+
+static int get_mode_info(int mode) {
+  __dpmi_regs r;
+  long dosbuf = __tb & 0xFFFFF;
+
+  r.x.ax = 0x4F01;
+  r.x.cx = mode;
+  r.x.di = dosbuf & 0xF;
+  r.x.es = (dosbuf >> 4) & 0xFFFF;
+  __dpmi_int(0x10, &r);
+
+  if (r.h.ah)
+    return -1;
+
+  dosmemget(dosbuf, sizeof(MODE_INFO), &mode_info);
+  return 0;
+}
+
+/* Find 800x600 8bpp mode by enumerating the mode list */
+static int find_vesa_mode(void) {
+  unsigned long mode_ptr;
+  unsigned short seg, off;
+  unsigned short mode;
+  long list_addr;
+
+  mode_ptr = vesa_info.VideoModePtr;
+  seg = (mode_ptr >> 16) & 0xFFFF;
+  off = mode_ptr & 0xFFFF;
+  list_addr = (long)seg * 16 + off;
+
+  for (;;) {
+    mode = _farpeekw(_dos_ds, list_addr);
+    if (mode == 0xFFFF)
+      break;
+    list_addr += 2;
+
+    if (get_mode_info(mode) != 0)
+      continue;
+    if (mode_info.XResolution == 800 &&
+        mode_info.YResolution == 600 &&
+        mode_info.BitsPerPixel == 8)
+      return mode;
+  }
+
+  return -1;
+}
+
+static void set_vesa_bank(int bank) {
+  __dpmi_regs r;
+  if (bank == current_bank)
+    return;
+  current_bank = bank;
+  r.x.ax = 0x4F05;
+  r.x.bx = 0;
+  r.x.dx = bank;
+  __dpmi_int(0x10, &r);
+}
+
+static void set_rgb332_palette(void) {
+  int i;
+  for (i = 0; i < 256; i++) {
+    outportb(0x3C8, i);
+    outportb(0x3C9, ((i >> 5) & 7) * 9);
+    outportb(0x3C9, ((i >> 2) & 7) * 9);
+    outportb(0x3C9, (i & 3) * 21);
   }
 }
