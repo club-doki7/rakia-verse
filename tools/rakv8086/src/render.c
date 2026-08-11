@@ -4,6 +4,7 @@
 #include <sys/farptr.h>
 #include <sys/movedata.h>
 #include <string.h>
+#include "bitmap.h"
 #include "render.h"
 
 typedef struct __attribute__((packed)) {
@@ -190,6 +191,61 @@ void svga_flush(const svga_buffer *buf) {
     offset += chunk;
     remaining -= chunk;
     bank += winsize / gran;
+  }
+}
+
+void svga_draw_bitmap(svga_buffer *buf,
+                      bitmap const *bmp,
+                      unsigned short x,
+                      unsigned short y) {
+  svga_draw_bitmap_clip(buf, bmp, x, y, 0, 0, bmp->width, bmp->height);
+}
+
+void svga_draw_bitmap_clip(svga_buffer *buf,
+                           bitmap const *bmp,
+                           unsigned short x,
+                           unsigned short y,
+                           unsigned short clip_x,
+                           unsigned short clip_y,
+                           unsigned short clip_w,
+                           unsigned short clip_h) {
+  unsigned short row, col;
+  unsigned short src_stride;
+
+  if (clip_x + clip_w > bmp->width)
+    clip_w = bmp->width - clip_x;
+  if (clip_y + clip_h > bmp->height)
+    clip_h = bmp->height - clip_y;
+
+  if (bmp->rgb565) {
+    /* RGB565 -> convert to RGB332 for the 8-bit framebuffer */
+    src_stride = bmp->width * 2;
+    for (row = 0; row < clip_h && y + row < 600; row++) {
+      unsigned char const *src_row = bmp->pixels
+                                     + (unsigned long)(clip_y + row) * src_stride
+                                     + clip_x * 2;
+      for (col = 0; col < clip_w && x + col < 800; col++) {
+        unsigned short px = (unsigned short)src_row[col * 2]
+                            | ((unsigned short)src_row[col * 2 + 1] << 8);
+        unsigned char r = (px >> 11) & 0x1F;
+        unsigned char g = (px >> 5) & 0x3F;
+        unsigned char b = px & 0x1F;
+        /* RGB332: 3 bits R, 3 bits G, 2 bits B */
+        buf->localbuf[(unsigned long)(y + row) * 800 + (x + col)] =
+            ((r >> 2) << 5) | ((g >> 3) << 2) | (b >> 3);
+      }
+    }
+  } else {
+    /* 1-bit: white on set bit, black otherwise */
+    src_stride = (bmp->width + 7) / 8;
+    for (row = 0; row < clip_h && y + row < 600; row++) {
+      unsigned char const *src_row = bmp->pixels + (unsigned long)(clip_y + row) * src_stride;
+      for (col = 0; col < clip_w && x + col < 800; col++) {
+        unsigned short sx = clip_x + col;
+        unsigned char bit = (src_row[sx / 8] >> (7 - (sx & 7))) & 1;
+        buf->localbuf[(unsigned long)(y + row) * 800 + (x + col)] = bit ? 0xFF : 0x00;
+      }
+    }
   }
 }
 

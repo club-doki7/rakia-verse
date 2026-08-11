@@ -1,0 +1,8 @@
+*.obj
+*.OBJ
+*.exe
+*.EXE
+*.swp
+*.SWP
+build.sh
+!dosbox_c/csdpmi/**/*
