@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 CFLAGS_RAKV = -Iinclude
 SRCS = main.c $(wildcard src/*.c)
 OBJS = $(SRCS:.c=.obj)
@@ -14,7 +16,8 @@ $(TARGET): $(OBJS)
 	@$(CC) $(CFLAGS_RAKV) $(CFLAGS) -c -o $@ $<
 
 run: dosbox_c/$(TARGET)
-	$(DOSBOX) -conf dosbox.conf
+	@printf '\t%s\t%s\n' 'DOSBOX' $<
+	@$(DOSBOX) -conf dosbox.conf
 
 dosbox_c/$(TARGET): $(TARGET)
 	@cp $< $@
