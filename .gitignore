@@ -3,5 +3,6 @@ dist.xml
 **/__pycache__
 **/.claude
 _sessions
+_reference
 
 src/maps/map-*-1.5x.png
