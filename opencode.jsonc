@@ -4,6 +4,9 @@
     "task": false,
   },
   "permission": {
+    "read": {
+      "opencode.jsonc": "deny",
+    },
     "task": "deny",
   },
 }
